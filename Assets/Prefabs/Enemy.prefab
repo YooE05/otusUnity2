@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weaponComponent: {fileID: 5568771391735819374}
-  _countdown: 3
+  _countdown: 2
 --- !u!1 &2239154907127902911
 GameObject:
   m_ObjectHideFlags: 0

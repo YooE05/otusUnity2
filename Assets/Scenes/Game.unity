@@ -261,10 +261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37bd15923a144ffbab0333dc6e74e641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialCount: 50
-  _container: {fileID: 1831741369}
+  _parent: {fileID: 1831741369}
+  _releasedParent: {fileID: 1683128698}
   _prefab: {fileID: 201757604187811891, guid: 5fe72886874b4e445b06cf777ca4920d, type: 3}
-  _worldTransform: {fileID: 363245576}
+  _initCount: 50
   _levelBounds: {fileID: 2572952653776768186}
 --- !u!1 &519420028
 GameObject:
@@ -396,7 +396,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dae85f8264479bac19d85418d92392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spawnDelay: 1
+  _enemyPositions: {fileID: 7166351703523243261}
   _enemyPool: {fileID: 562298207}
+  _character: {fileID: 4414282821800802397}
   _bulletSystem: {fileID: 363245577}
   _bulletConfig: {fileID: 11400000, guid: 94ca442ce91bad448bcd02e3ce31a9e9, type: 2}
 --- !u!114 &562298207
@@ -411,12 +414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bdcdf257e0242258e7a67fe13d80e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPositions: {fileID: 7166351703523243261}
-  _character: {fileID: 4414282821800802397}
-  _worldTransform: {fileID: 562298204}
-  _enemyCount: 7
-  _container: {fileID: 178513672}
+  _parent: {fileID: 178513672}
+  _releasedParent: {fileID: 1683128698}
   _prefab: {fileID: 559606060570185700, guid: 87fe189881a524806800482ac8eaaa83, type: 3}
+  _initCount: 5
 --- !u!1 &883274639
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467e54cb15544bfd903a9a69ca537237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementInputManager: {fileID: 1134805361}
+  _movementInputManager: {fileID: 1134805361}
   _moveComponent: {fileID: 4414282821800802398}
 --- !u!114 &1879759791
 MonoBehaviour:
@@ -1017,10 +1018,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a40dacbeba84ba1b55163e9b048081b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBorder: {fileID: 6563466540960878063}
-  rightBorder: {fileID: 1668159544493171190}
-  downBorder: {fileID: 3327143300152331510}
-  topBorder: {fileID: 1752465411210150465}
+  _leftBorder: {fileID: 6563466540960878063}
+  _rightBorder: {fileID: 1668159544493171190}
+  _downBorder: {fileID: 3327143300152331510}
+  _topBorder: {fileID: 1752465411210150465}
 --- !u!1 &3066462935130252019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,14 +1687,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94380673bed40d7aff42c7cee30b556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPositions:
+  _spawnPositions:
   - {fileID: 5098186055898699330}
   - {fileID: 3822857799868723767}
   - {fileID: 6359635304368030436}
   - {fileID: 2272249728968689581}
   - {fileID: 5689270860486713316}
   - {fileID: 106235378999874491}
-  attackPositions:
+  _attackPositions:
   - {fileID: 8569045085939387605}
   - {fileID: 9088267052445128325}
   - {fileID: 713232402740842374}

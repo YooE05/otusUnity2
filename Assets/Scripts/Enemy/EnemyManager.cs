@@ -1,43 +1,64 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace ShootEmUp
 {
     public sealed class EnemyManager : MonoBehaviour
     {
+        [SerializeField] private float _spawnDelay;
+        [SerializeField] private EnemyPositions _enemyPositions;
         [SerializeField] private EnemyPool _enemyPool;
+        [SerializeField] private GameObject _character;
         [SerializeField] private BulletSystem _bulletSystem;
         [SerializeField] private BulletConfig _bulletConfig;
 
-        private readonly HashSet<GameObject> _activeEnemies = new HashSet<GameObject>();
+        private void Start()
+        {
+            StartCoroutine(SpawnEnemiesByDelay());
+        }
 
-        private IEnumerator Start()
+        private IEnumerator SpawnEnemiesByDelay()
         {
             while (true)
             {
-                yield return new WaitForSeconds(1);
-                var enemy = _enemyPool.SpawnEnemy();
-
-                if (enemy == null) continue;
-                if (!_activeEnemies.Add(enemy)) continue;
-
-                enemy.GetComponent<HitPointsComponent>().OnHpEmpty += OnDestroyed;
-                enemy.GetComponent<EnemyAttackAgent>().OnFire += OnFire;
-                enemy.GetComponent<EnemyMoveAgent>().OnDestinationReached +=
-                    enemy.GetComponent<EnemyAttackAgent>().EnableFireAbility;
+                yield return new WaitForSeconds(_spawnDelay);
+                SpawnEnemy();
             }
+        }
+
+        private void SpawnEnemy()
+        {
+            var enemy = _enemyPool.SpawnEnemy();
+
+            if (enemy == null) return;
+
+            SetUpEnemy(enemy);
+        }
+
+        private void SetUpEnemy(GameObject enemy)
+        {
+            var spawnPosition = _enemyPositions.RandomSpawnPosition();
+            enemy.transform.position = spawnPosition.position;
+
+            enemy.GetComponent<HitPointsComponent>().OnHpEmpty += OnDestroyed;
+
+            var attackPosition = _enemyPositions.RandomAttackPosition();
+            enemy.GetComponent<EnemyAttackAgent>().SetTarget(_character);
+            enemy.GetComponent<EnemyAttackAgent>().OnFire += OnFire;
+
+            enemy.GetComponent<EnemyMoveAgent>().SetDestination(attackPosition.position);
+            enemy.GetComponent<EnemyMoveAgent>().OnDestinationReached +=
+                enemy.GetComponent<EnemyAttackAgent>().EnableFireAbility;
         }
 
         private void OnDestroyed(GameObject enemy)
         {
-            if (!_activeEnemies.Remove(enemy)) return;
-
             enemy.GetComponent<HitPointsComponent>().OnHpEmpty -= OnDestroyed;
             enemy.GetComponent<EnemyAttackAgent>().OnFire -= OnFire;
+            enemy.GetComponent<EnemyAttackAgent>().Reset();
             enemy.GetComponent<EnemyMoveAgent>().OnDestinationReached -=
                 enemy.GetComponent<EnemyAttackAgent>().EnableFireAbility;
-            
+
             _enemyPool.UnspawnEnemy(enemy);
         }
 

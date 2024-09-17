@@ -8,10 +8,8 @@ namespace ShootEmUp
         public event Action<Bullet, Collision2D> OnCollisionEntered;
         
         [NonSerialized] public int Damage;
-
-        [SerializeField] private new Rigidbody2D rigidbody2D;
-
-        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private new Rigidbody2D _rigidbody2D;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
@@ -39,7 +37,7 @@ namespace ShootEmUp
 
         private void SetVelocity(Vector2 velocity)
         {
-            rigidbody2D.velocity = velocity;
+            _rigidbody2D.velocity = velocity;
         }
 
         private void SetPhysicsLayer(int physicsLayer)
@@ -54,7 +52,7 @@ namespace ShootEmUp
 
         private void SetColor(Color color)
         {
-            spriteRenderer.color = color;
+            _spriteRenderer.color = color;
         }
     }
 }

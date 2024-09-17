@@ -20,6 +20,7 @@
           </e>
           <e p="Common" t="Include">
             <e p="PhysicsLayer.cs" t="Include" />
+            <e p="Pool.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
             <e p="HitPointsComponent.cs" t="Include" />

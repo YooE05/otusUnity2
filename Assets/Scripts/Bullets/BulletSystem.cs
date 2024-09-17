@@ -3,33 +3,21 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class BulletSystem : MonoBehaviour
+    public sealed class BulletSystem : Pool<Bullet>
     {
-        [SerializeField] private int _initialCount = 50;
-
-        [SerializeField] private Transform _container;
-        [SerializeField] private Bullet _prefab;
-        [SerializeField] private Transform _worldTransform;
         [SerializeField] private LevelBounds _levelBounds;
 
-        private readonly Queue<Bullet> _bulletPool = new Queue<Bullet>();
-        private readonly HashSet<Bullet> _activeBullets = new HashSet<Bullet>();
         private readonly List<Bullet> _cache = new List<Bullet>();
-
-        private void Awake()
-        {
-            for (var i = 0; i < _initialCount; i++)
-            {
-                var bullet = Instantiate(_prefab, _container);
-
-                _bulletPool.Enqueue(bullet);
-            }
-        }
 
         private void FixedUpdate()
         {
+            CheckBulletsOutOfBounds();
+        }
+
+        private void CheckBulletsOutOfBounds()
+        {
             _cache.Clear();
-            _cache.AddRange(_activeBullets);
+            _cache.AddRange(GetActive());
 
             for (int i = 0, count = _cache.Count; i < count; i++)
             {
@@ -55,21 +43,10 @@ namespace ShootEmUp
 
         private void FlyBulletByArgs(Args args)
         {
-            if (_bulletPool.TryDequeue(out var bullet))
-            {
-                bullet.SetParent(_worldTransform);
-            }
-            else
-            {
-                bullet = Instantiate(_prefab, _worldTransform);
-            }
-
+            var bullet = Get();
+            bullet.SetParent(_releasedParent);
             bullet.SetUpByArgs(args);
-
-            if (_activeBullets.Add(bullet))
-            {
-                bullet.OnCollisionEntered += OnBulletCollision;
-            }
+            bullet.OnCollisionEntered += OnBulletCollision;
         }
 
         private void OnBulletCollision(Bullet bullet, Collision2D collision)
@@ -84,12 +61,9 @@ namespace ShootEmUp
 
         private void RemoveBullet(Bullet bullet)
         {
-            if (!_activeBullets.Remove(bullet)) return;
-
+            bullet.SetParent(_parent);
             bullet.OnCollisionEntered -= OnBulletCollision;
-            bullet.SetParent(_container);
-
-            _bulletPool.Enqueue(bullet);
+            Return(bullet);
         }
 
         public struct Args

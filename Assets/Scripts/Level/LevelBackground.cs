@@ -5,35 +5,35 @@ namespace ShootEmUp
 {
     public sealed class LevelBackground : MonoBehaviour
     {
-        private float startPositionY;
-        private float endPositionY;
+        private float _startPositionY;
+        private float _endPositionY;
 
-        private float movingSpeedY;
+        private float _movingSpeedY;
 
-        private float positionX;
-        private float positionZ;
+        private float _positionX;
+        private float _positionZ;
 
         [SerializeField] private Params _params;
 
         private void Awake()
         {
-            startPositionY = _params.StartPositionY;
-            endPositionY = _params.EndPositionY;
-            movingSpeedY = _params.MovingSpeedY;
+            _startPositionY = _params.StartPositionY;
+            _endPositionY = _params.EndPositionY;
+            _movingSpeedY = _params.MovingSpeedY;
             
             var position = transform.position;
-            positionX = position.x;
-            positionZ = position.z;
+            _positionX = position.x;
+            _positionZ = position.z;
         }
 
         private void FixedUpdate()
         {
-            if (transform.position.y <= endPositionY)
+            if (transform.position.y <= _endPositionY)
             {
-                transform.position = new Vector3(positionX, startPositionY, positionZ);
+                transform.position = new Vector3(_positionX, _startPositionY, _positionZ);
             }
 
-            transform.position -= new Vector3(positionX, movingSpeedY * Time.fixedDeltaTime, positionZ);
+            transform.position -= new Vector3(_positionX, _movingSpeedY * Time.fixedDeltaTime, _positionZ);
         }
 
         [Serializable]
