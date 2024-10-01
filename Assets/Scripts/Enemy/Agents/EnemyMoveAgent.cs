@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class EnemyMoveAgent : MonoBehaviour
+    public sealed class EnemyMoveAgent : MonoBehaviour, Listeners.IFixUpdaterListener
     {
         public Action OnDestinationReached;
         private bool _isReached = true;
@@ -18,7 +18,7 @@ namespace ShootEmUp
             _isReached = false;
         }
 
-        private void FixedUpdate()
+        public void OnFixedUpdate(float deltaTime)
         {
             if (_isReached)
             {
@@ -33,7 +33,7 @@ namespace ShootEmUp
                 return;
             }
 
-            var direction = vector.normalized * Time.fixedDeltaTime;
+            var direction = vector.normalized * deltaTime;
             moveComponent.MoveByRigidbodyVelocity(direction);
         }
     }

@@ -2,11 +2,11 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class MovementInputManager : MonoBehaviour
+    public sealed class MovementInputManager : MonoBehaviour, Listeners.IUpdateListener
     {
         public float HorizontalDirection { get; private set; }
 
-        private void Update()
+        public void OnUpdate(float deltaTime)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {

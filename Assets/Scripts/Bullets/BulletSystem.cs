@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class BulletSystem : Pool<Bullet>
+    public sealed class BulletSystem : Pool<Bullet>, Listeners.IFixUpdaterListener
     {
         [SerializeField] private LevelBounds _levelBounds;
 
         private readonly List<Bullet> _cache = new List<Bullet>();
 
-        private void FixedUpdate()
+        public void OnFixedUpdate(float deltaTime)
         {
             CheckBulletsOutOfBounds();
         }

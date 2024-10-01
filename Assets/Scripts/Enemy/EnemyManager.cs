@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 namespace ShootEmUp
 {
-    public sealed class EnemyManager : MonoBehaviour
+    public sealed class EnemyManager : MonoBehaviour, Listeners.IStartListener
     {
         [SerializeField] private float _spawnDelay;
         [SerializeField] private EnemyPositions _enemyPositions;
@@ -11,8 +12,16 @@ namespace ShootEmUp
         [SerializeField] private GameObject _character;
         [SerializeField] private BulletSystem _bulletSystem;
         [SerializeField] private BulletConfig _bulletConfig;
+        
+        private GameManager _gameManager;
 
-        private void Start()
+        [Inject]
+        public void Construct(GameManager gameManager)
+        {
+            _gameManager = gameManager;
+        }
+        
+        public void OnStart()
         {
             StartCoroutine(SpawnEnemiesByDelay());
         }
@@ -33,6 +42,7 @@ namespace ShootEmUp
             if (enemy == null) return;
 
             SetUpEnemy(enemy);
+            _gameManager.AddListeners(enemy);
         }
 
         private void SetUpEnemy(GameObject enemy)
@@ -49,6 +59,7 @@ namespace ShootEmUp
             enemy.GetComponent<EnemyMoveAgent>().SetDestination(attackPosition.position);
             enemy.GetComponent<EnemyMoveAgent>().OnDestinationReached +=
                 enemy.GetComponent<EnemyAttackAgent>().EnableFireAbility;
+            
         }
 
         private void OnDestroyed(GameObject enemy)

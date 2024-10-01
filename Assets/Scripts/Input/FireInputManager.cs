@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class FireInputManager : MonoBehaviour
+    public sealed class FireInputManager : MonoBehaviour, Listeners.IUpdateListener
     {
         public bool IsFireButtonPressed { get; private set; }
 
@@ -11,7 +11,7 @@ namespace ShootEmUp
             IsFireButtonPressed = false;
         }
 
-        private void Update()
+        public void OnUpdate(float deltaTime)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

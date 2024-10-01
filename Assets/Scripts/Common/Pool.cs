@@ -4,7 +4,7 @@ using Object = UnityEngine.Object;
 
 namespace ShootEmUp
 {
-    public abstract class Pool<T> : MonoBehaviour where T : Object
+    public abstract class Pool<T> : MonoBehaviour, Listeners.IInitListener where T : Object
     {
         [SerializeField] protected Transform _parent;
         [SerializeField] protected Transform _releasedParent;
@@ -14,7 +14,7 @@ namespace ShootEmUp
         private readonly Queue<T> _poolQueue = new Queue<T>();
         private readonly List<T> _activeObjects = new List<T>();
 
-        private void Awake()
+        public void OnInit()
         {
             InitObjects();
         }

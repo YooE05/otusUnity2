@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class EnemyAttackAgent : MonoBehaviour
+    public sealed class EnemyAttackAgent : MonoBehaviour, Listeners.IFixUpdaterListener
     {
         public delegate void FireHandler(Vector2 position, Vector2 direction);
         public event FireHandler OnFire;
@@ -30,7 +30,7 @@ namespace ShootEmUp
             _canFire = true;
         }
 
-        private void FixedUpdate()
+        public void OnFixedUpdate(float deltaTime)
         {
             if (!_canFire)
             {
@@ -42,7 +42,7 @@ namespace ShootEmUp
                 return;
             }
 
-            _currentTime -= Time.fixedDeltaTime;
+            _currentTime -= deltaTime;
             if (_currentTime <= 0)
             {
                 Fire();
