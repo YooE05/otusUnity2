@@ -3,17 +3,30 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class Bullet : MonoBehaviour
+    public sealed class Bullet : MonoBehaviour, Listeners.IPauseListener, Listeners.IResumeListener
     {
         public event Action<Bullet, Collision2D> OnCollisionEntered;
-        
+
         [NonSerialized] public int Damage;
         [SerializeField] private new Rigidbody2D _rigidbody2D;
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
+        private Vector2 _lastVelocity = Vector2.zero;
+
         private void OnCollisionEnter2D(Collision2D collision)
         {
             OnCollisionEntered?.Invoke(this, collision);
+        }
+
+        public void OnPause()
+        {
+            _lastVelocity = _rigidbody2D.velocity;
+            _rigidbody2D.velocity = Vector2.zero;
+        }
+
+        public void OnResume()
+        {
+            _rigidbody2D.velocity = _lastVelocity;
         }
 
         public void SetUpByArgs(BulletSystem.Args args)

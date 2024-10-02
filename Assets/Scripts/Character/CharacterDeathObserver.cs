@@ -8,7 +8,7 @@ namespace ShootEmUp
         [SerializeField] private HitPointsComponent _hitPointsComponent;
        
         [Inject]
-        private GameManager _gameManager;
+        private GamecycleManager _gamecycleManager;
         
         private void OnEnable()
         {
@@ -20,6 +20,6 @@ namespace ShootEmUp
             _hitPointsComponent.OnHpEmpty -= OnCharacterDeath;
         }
 
-        private void OnCharacterDeath(GameObject _) => _gameManager.OnFinish();
+        private void OnCharacterDeath(GameObject _) => _gamecycleManager.OnFinish();
     }
 }

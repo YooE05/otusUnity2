@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
@@ -14,7 +15,7 @@ namespace ShootEmUp
         Finished = 4
     }
 
-    public sealed class GameManager :
+    public sealed class GamecycleManager :
         IInitializable,
         ITickable,
         IFixedTickable
@@ -29,7 +30,7 @@ namespace ShootEmUp
         private List<Listeners.IPrestartUpdateListener> prestartUpdatelisteners =
             new List<Listeners.IPrestartUpdateListener>();
 
-        public GameManager()
+        public GamecycleManager()
         {
             AddListenersFromScene(SceneManager.GetActiveScene().GetRootGameObjects());
         }
@@ -60,6 +61,18 @@ namespace ShootEmUp
             for (int i = 0; i < listeners.Length; i++)
             {
                 AddListener(listeners[i]);
+            }
+        }
+
+        public void AddListeners(Object obj)
+        {
+            if (obj is GameObject)
+            {
+                AddListeners((GameObject) obj);
+            }
+            else if (obj.GetType().GetInterface(nameof(Listeners.IGameListener)) != null)
+            {
+                AddListener(obj as Listeners.IGameListener);
             }
         }
 

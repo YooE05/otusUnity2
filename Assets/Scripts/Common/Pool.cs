@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 using Object = UnityEngine.Object;
 
 namespace ShootEmUp
@@ -13,7 +14,15 @@ namespace ShootEmUp
 
         private readonly Queue<T> _poolQueue = new Queue<T>();
         private readonly List<T> _activeObjects = new List<T>();
+        
+        private GamecycleManager _gamecycleManager;
 
+        [Inject]
+        public void Construct(GamecycleManager gamecycleManager)
+        {
+            _gamecycleManager = gamecycleManager;
+        }
+        
         public void OnInit()
         {
             InitObjects();
@@ -30,6 +39,7 @@ namespace ShootEmUp
         private void AddObject()
         {
             T poolObject = Instantiate(_prefab, _parent);
+            _gamecycleManager.AddListeners(poolObject);
             Return(poolObject);
         }
 
