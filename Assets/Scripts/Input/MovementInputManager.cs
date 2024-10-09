@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class MovementInputManager : MonoBehaviour, Listeners.IUpdateListener
+    public sealed class MovementInputManager : Listeners.IUpdateListener
     {
         public float HorizontalDirection { get; private set; }
 

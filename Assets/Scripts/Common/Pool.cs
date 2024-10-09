@@ -5,16 +5,16 @@ using Object = UnityEngine.Object;
 
 namespace ShootEmUp
 {
-    public abstract class Pool<T> : MonoBehaviour, Listeners.IInitListener where T : Object
+    public abstract class Pool<T> : Listeners.IInitListener where T : Object
     {
-        [SerializeField] protected Transform _parent;
-        [SerializeField] protected Transform _releasedParent;
-        [SerializeField] private T _prefab;
-        [SerializeField] protected int _initCount;
+        protected Transform _parent;
+        protected Transform _releasedParent;
+        protected T _prefab;
+        protected int _initCount;
 
         private readonly Queue<T> _poolQueue = new Queue<T>();
         private readonly List<T> _activeObjects = new List<T>();
-        
+
         private GamecycleManager _gamecycleManager;
 
         [Inject]
@@ -22,7 +22,7 @@ namespace ShootEmUp
         {
             _gamecycleManager = gamecycleManager;
         }
-        
+
         public void OnInit()
         {
             InitObjects();
@@ -38,7 +38,7 @@ namespace ShootEmUp
 
         private void AddObject()
         {
-            T poolObject = Instantiate(_prefab, _parent);
+            T poolObject = Object.Instantiate(_prefab, _parent);
             _gamecycleManager.AddListeners(poolObject);
             Return(poolObject);
         }

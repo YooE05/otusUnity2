@@ -395,9 +395,7 @@
           </e>
           <e p="GameManager" t="Include">
             <e p="GamecycleManager.cs" t="Include" />
-            <e p="GameStartManager.cs" t="Include" />
             <e p="Listeners.cs" t="Include" />
-            <e p="PauseResumeManager.cs" t="Include" />
           </e>
           <e p="Input" t="Include">
             <e p="FireInputManager.cs" t="Include" />
@@ -406,6 +404,12 @@
           <e p="Level" t="Include">
             <e p="LevelBackground.cs" t="Include" />
             <e p="LevelBounds.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="GameStartManager.cs" t="Include" />
+            <e p="PauseResumeManager.cs" t="Include" />
+            <e p="PauseUIView.cs" t="Include" />
+            <e p="StartUIView.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

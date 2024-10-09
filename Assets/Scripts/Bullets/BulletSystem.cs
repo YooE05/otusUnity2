@@ -5,9 +5,18 @@ namespace ShootEmUp
 {
     public sealed class BulletSystem : Pool<Bullet>, Listeners.IFixUpdaterListener, Listeners.IFinishListener
     {
-        [SerializeField] private LevelBounds _levelBounds;
-
+        private readonly LevelBounds _levelBounds;
         private readonly List<Bullet> _cache = new List<Bullet>();
+
+        public BulletSystem(LevelBounds levelBounds, Transform parent, Transform releasedParent, Bullet prefab,
+            int initCount)
+        {
+            _levelBounds = levelBounds;
+            _parent = parent;
+            _releasedParent = releasedParent;
+            _prefab = prefab;
+            _initCount = initCount;
+        }
 
         public void OnFixedUpdate(float deltaTime)
         {

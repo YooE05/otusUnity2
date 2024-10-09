@@ -2,15 +2,21 @@
 
 namespace ShootEmUp
 {
-    public sealed class CharacterMovementController: MonoBehaviour, Listeners.IFixUpdaterListener
+    public sealed class CharacterMovementController : Listeners.IFixUpdaterListener
     {
-        [SerializeField] private MovementInputManager _movementInputManager;
+        private readonly MoveComponent _moveComponent;
+        private MovementInputManager _movementInputManager;
 
-        [SerializeField] private MoveComponent _moveComponent;
-        
+        public CharacterMovementController(MovementInputManager movementInputManager, MoveComponent moveComponent)
+        {
+            _movementInputManager = movementInputManager;
+            _moveComponent = moveComponent;
+        }
+
         public void OnFixedUpdate(float deltaTime)
         {
-            _moveComponent.MoveByRigidbodyVelocity(new Vector2(_movementInputManager.HorizontalDirection, 0) * deltaTime);
+            _moveComponent.MoveByRigidbodyVelocity(
+                new Vector2(_movementInputManager.HorizontalDirection, 0) * deltaTime);
         }
     }
 }

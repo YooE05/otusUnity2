@@ -1,20 +1,17 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using Zenject;
+﻿using UnityEngine.UI;
 
 namespace ShootEmUp
 {
-    public class PauseResumeManager : MonoBehaviour, Listeners.IInitListener, Listeners.IStartListener,
+    public class PauseResumeManager : Listeners.IInitListener, Listeners.IStartListener,
         Listeners.IFinishListener
     {
-        [SerializeField] private Button _pauseButton;
+        private readonly Button _pauseButton;
+        private readonly GamecycleManager _gamecycleManager;
 
-        private GamecycleManager _gamecycleManager;
-
-        [Inject]
-        public void Construct(GamecycleManager gamecycleManager)
+        public PauseResumeManager(GamecycleManager gamecycleManager, Button pauseButton)
         {
             _gamecycleManager = gamecycleManager;
+            _pauseButton = pauseButton;
         }
 
         public void OnInit()

@@ -6,21 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/PauseResumeManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/PauseResumeManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseUIView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseUIView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullets/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullets/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullets/BulletSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullets/BulletSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttackController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDeathObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDeathObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovementController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GamecycleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GamecycleManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameStartManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameStartManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameStartManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameStartManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/PauseResumeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager/PauseResumeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/FireInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/FireInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/MovementInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/MovementInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelBounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelBounds.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +44,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -54,29 +62,34 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemiesManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/HitPointsComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullets/BulletPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPositions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDeathObserver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttackController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovementController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/FireInputManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/MovementInputManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelBackground.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyMoveAgent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameStartManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameStartManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/LifecycleManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GamecycleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/PauseResumeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullets/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullets/BulletSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/FireInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/MovementInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDeathObserver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttackController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseUIView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameStartManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseResumeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelBounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" />
       </list>
     </option>
   </component>
@@ -134,7 +147,8 @@
       <workItem from="1726490248436" duration="5719000" />
       <workItem from="1726577183840" duration="9660000" />
       <workItem from="1727802924730" duration="10806000" />
-      <workItem from="1727863111654" duration="2253000" />
+      <workItem from="1727863111654" duration="5050000" />
+      <workItem from="1728476001325" duration="13085000" />
     </task>
     <servers />
   </component>
@@ -261,10 +275,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="247" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1727820429034" />
-    <state x="1047" y="424" key="RiderGenerateDialog" timestamp="1727812337592">
+    <state x="1047" y="424" key="RiderGenerateDialog" timestamp="1728481771897">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1047" y="424" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1727812337592" />
+    <state x="1047" y="424" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1728481771897" />
     <state x="1000" y="410" key="RollbackChangesDialog" timestamp="1727811727353">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -277,10 +291,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1726586034778" />
-    <state x="1573" y="41" width="1871" height="1388" key="dock-window-1" timestamp="1726492573116">
+    <state x="1000" y="139" width="1920" height="1388" key="dock-window-1" timestamp="1728490421662">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1573" y="41" width="1871" height="1388" key="dock-window-1/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1726492573116" />
+    <state x="1000" y="139" width="1920" height="1388" key="dock-window-1/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1728490421662" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1726583666492">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -289,10 +303,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1727864564689" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1726586663812">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1728485236342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1726586663812" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1728485236342" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -309,19 +323,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Scripts\Common\Pool.cs" initialLine="41">
-            <startOffsets>
-              <option value="1139" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1182" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

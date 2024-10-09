@@ -1,21 +1,24 @@
 ﻿using UnityEngine;
-using Zenject;
 
 namespace ShootEmUp
 {
-    public sealed class CharacterDeathObserver : MonoBehaviour
+    public sealed class CharacterDeathObserver : Listeners.IStartListener, Listeners.IFinishListener
     {
-        [SerializeField] private HitPointsComponent _hitPointsComponent;
-       
-        [Inject]
-        private GamecycleManager _gamecycleManager;
-        
-        private void OnEnable()
+        private readonly HitPointsComponent _hitPointsComponent;
+        private readonly GamecycleManager _gamecycleManager;
+
+        public CharacterDeathObserver(HitPointsComponent hitPointsComponent, GamecycleManager gamecycleManager)
+        {
+            _hitPointsComponent = hitPointsComponent;
+            _gamecycleManager = gamecycleManager;
+        }
+
+        public void OnStart()
         {
             _hitPointsComponent.OnHpEmpty += OnCharacterDeath;
         }
 
-        private void OnDisable()
+        public void OnFinish()
         {
             _hitPointsComponent.OnHpEmpty -= OnCharacterDeath;
         }

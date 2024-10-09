@@ -5,11 +5,12 @@ namespace ShootEmUp
     public sealed class EnemyAttackAgent : MonoBehaviour, Listeners.IFixUpdaterListener
     {
         public delegate void FireHandler(Vector2 position, Vector2 direction);
+
         public event FireHandler OnFire;
 
         [SerializeField] private WeaponComponent _weaponComponent;
         [SerializeField] private float _countdown;
-        
+
         private bool _canFire;
         private GameObject _target;
         private float _currentTime;
@@ -36,7 +37,7 @@ namespace ShootEmUp
             {
                 return;
             }
-            
+
             if (!_target.GetComponent<HitPointsComponent>().IsHitPointsExists)
             {
                 return;
@@ -55,7 +56,7 @@ namespace ShootEmUp
             var startPosition = _weaponComponent.Position;
             var vector = (Vector2) _target.transform.position - startPosition;
             var direction = vector.normalized;
-            
+
             OnFire?.Invoke(startPosition, direction);
         }
     }

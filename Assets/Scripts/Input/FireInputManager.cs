@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class FireInputManager : MonoBehaviour, Listeners.IUpdateListener
+    public sealed class FireInputManager : Listeners.IUpdateListener
     {
         public bool IsFireButtonPressed { get; private set; }
 

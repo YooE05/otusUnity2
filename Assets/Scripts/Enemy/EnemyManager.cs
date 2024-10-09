@@ -1,30 +1,53 @@
-using System.Collections;
 using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class EnemyManager : MonoBehaviour, Listeners.IStartListener
+    public sealed class EnemyManager : Listeners.IStartListener, Listeners.IFixUpdaterListener,
+        Listeners.IFinishListener
     {
-        [SerializeField] private float _spawnDelay;
-        [SerializeField] private EnemyPositions _enemyPositions;
-        [SerializeField] private EnemyPool _enemyPool;
-        [SerializeField] private GameObject _character;
-        [SerializeField] private BulletSystem _bulletSystem;
-        [SerializeField] private BulletConfig _bulletConfig;
+        private float _currentTime;
+        private bool _spawnIsEnable;
 
+        private readonly float _spawnDelay;
+        private readonly EnemyPositions _enemyPositions;
+        private readonly GameObject _character;
+        private readonly BulletConfig _bulletConfig;
+        private readonly EnemyPool _enemyPool;
+        private readonly BulletSystem _bulletSystem;
+
+        public EnemyManager(BulletSystem bulletSystem, EnemyPool enemyPool, EnemyPositions enemyPositions,
+            GameObject character, BulletConfig bulletConfig, float spawnDelay)
+        {
+            _enemyPool = enemyPool;
+            _bulletSystem = bulletSystem;
+            _enemyPositions = enemyPositions;
+            _character = character;
+            _bulletConfig = bulletConfig;
+            _spawnDelay = spawnDelay;
+
+            _spawnIsEnable = false;
+            _currentTime = 0f;
+        }
 
         public void OnStart()
         {
-            StartCoroutine(SpawnEnemiesByDelay());
+            _spawnIsEnable = true;
         }
 
-        private IEnumerator SpawnEnemiesByDelay()
+        public void OnFixedUpdate(float deltaTime)
         {
-            while (true)
-            {
-                yield return new WaitForSeconds(_spawnDelay);
-                SpawnEnemy();
-            }
+            if (!_spawnIsEnable) return;
+
+            _currentTime += deltaTime;
+            if (!(_currentTime >= _spawnDelay)) return;
+            
+            SpawnEnemy();
+            _currentTime = 0f;
+        }
+
+        public void OnFinish()
+        {
+            _spawnIsEnable = false;
         }
 
         private void SpawnEnemy()

@@ -4,6 +4,15 @@ namespace ShootEmUp
 {
     public sealed class EnemyPool : Pool<GameObject>
     {
+        public EnemyPool(Transform parent, Transform releasedParent, GameObject prefab,
+            int initCount)
+        {
+            _parent = parent;
+            _releasedParent = releasedParent;
+            _prefab = prefab;
+            _initCount = initCount;
+        }
+        
         public GameObject SpawnEnemy()
         {
             if (GetActive().Count >= _initCount)
