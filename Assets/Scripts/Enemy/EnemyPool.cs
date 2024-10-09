@@ -12,7 +12,7 @@ namespace ShootEmUp
             _prefab = prefab;
             _initCount = initCount;
         }
-        
+
         public GameObject SpawnEnemy()
         {
             if (GetActive().Count >= _initCount)

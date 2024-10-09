@@ -24,6 +24,7 @@ namespace ShootEmUp
         [SerializeField] private EnemyPositions _enemyPositions;
         [SerializeField] private BulletConfig _enemyBulletConfig;
         [SerializeField] private float _spawnDelay = 3f;
+        [SerializeField] private float _enemyFireDelay = 2f;
 
         [Header("Enemies Pool")] 
         [SerializeField] private Transform _enemiesParent;
@@ -83,7 +84,7 @@ namespace ShootEmUp
                 .WithArguments(_enemiesParent, _activeObjectsParent, _enemyPrefab, _initEnemiesCount)
                 .NonLazy();
             Container.BindInterfacesTo<EnemyManager>().AsSingle()
-                .WithArguments(_enemyPositions, _characterGO, _enemyBulletConfig, _spawnDelay).NonLazy();
+                .WithArguments(_enemyPositions, _characterGO, _enemyBulletConfig, _spawnDelay, _enemyFireDelay).NonLazy();
         }
     }
 }

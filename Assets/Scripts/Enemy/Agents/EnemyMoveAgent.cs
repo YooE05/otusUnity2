@@ -3,14 +3,21 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class EnemyMoveAgent : MonoBehaviour, Listeners.IFixUpdaterListener
+    public sealed class EnemyMoveAgent : Listeners.IFixUpdaterListener
     {
         public Action OnDestinationReached;
+        
         private bool _isReached = true;
-
-        [SerializeField] private MoveComponent moveComponent;
-
         private Vector2 _destination;
+
+        private readonly MoveComponent _moveComponent;
+        private readonly Transform _enemyTransform;
+
+        public EnemyMoveAgent(MoveComponent moveComponent, Transform enemyTransform)
+        {
+            _moveComponent = moveComponent;
+            _enemyTransform = enemyTransform;
+        }
 
         public void SetDestination(Vector2 endPoint)
         {
@@ -25,7 +32,7 @@ namespace ShootEmUp
                 return;
             }
 
-            var vector = _destination - (Vector2) transform.position;
+            var vector = _destination - (Vector2) _enemyTransform.position;
             if (vector.magnitude <= 0.25f)
             {
                 _isReached = true;
@@ -34,7 +41,7 @@ namespace ShootEmUp
             }
 
             var direction = vector.normalized * deltaTime;
-            moveComponent.MoveByRigidbodyVelocity(direction);
+            _moveComponent.MoveByRigidbodyVelocity(direction);
         }
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace ShootEmUp
@@ -8,22 +9,30 @@ namespace ShootEmUp
         private float _currentTime;
         private bool _spawnIsEnable;
 
+        private Dictionary<GameObject, EnemyAttackAgent> _attackAgentsDictionary = new Dictionary<GameObject, EnemyAttackAgent>();
+        private Dictionary<GameObject, EnemyMoveAgent> _moveAgentsDictionary = new Dictionary<GameObject, EnemyMoveAgent>();
+
         private readonly float _spawnDelay;
+        private readonly float _fireDelay;
+        private readonly GamecycleManager _gamecycleManager;
         private readonly EnemyPositions _enemyPositions;
         private readonly GameObject _character;
         private readonly BulletConfig _bulletConfig;
         private readonly EnemyPool _enemyPool;
         private readonly BulletSystem _bulletSystem;
 
-        public EnemyManager(BulletSystem bulletSystem, EnemyPool enemyPool, EnemyPositions enemyPositions,
-            GameObject character, BulletConfig bulletConfig, float spawnDelay)
+        public EnemyManager(GamecycleManager gamecycleManager, BulletSystem bulletSystem, EnemyPool enemyPool,
+            EnemyPositions enemyPositions,
+            GameObject character, BulletConfig bulletConfig, float spawnDelay = 3f, float fireDelay = 2f)
         {
+            _gamecycleManager = gamecycleManager;
             _enemyPool = enemyPool;
             _bulletSystem = bulletSystem;
             _enemyPositions = enemyPositions;
             _character = character;
             _bulletConfig = bulletConfig;
             _spawnDelay = spawnDelay;
+            _fireDelay = fireDelay;
 
             _spawnIsEnable = false;
             _currentTime = 0f;
@@ -40,7 +49,7 @@ namespace ShootEmUp
 
             _currentTime += deltaTime;
             if (!(_currentTime >= _spawnDelay)) return;
-            
+
             SpawnEnemy();
             _currentTime = 0f;
         }
@@ -66,22 +75,34 @@ namespace ShootEmUp
 
             enemy.GetComponent<HitPointsComponent>().OnHpEmpty += OnDestroyed;
 
-            var attackPosition = _enemyPositions.RandomAttackPosition();
-            enemy.GetComponent<EnemyAttackAgent>().SetTarget(_character);
-            enemy.GetComponent<EnemyAttackAgent>().OnFire += OnFire;
+            if (!_attackAgentsDictionary.ContainsKey(enemy))
+            {
+                var newAttackAgent = new EnemyAttackAgent(enemy.GetComponent<WeaponComponent>(), _fireDelay);
+                _gamecycleManager.AddListener(newAttackAgent);
+                _attackAgentsDictionary.Add(enemy, newAttackAgent);
+            }
+            _attackAgentsDictionary[enemy].SetTarget(_character);
+            _attackAgentsDictionary[enemy].OnFire += OnFire;
 
-            enemy.GetComponent<EnemyMoveAgent>().SetDestination(attackPosition.position);
-            enemy.GetComponent<EnemyMoveAgent>().OnDestinationReached +=
-                enemy.GetComponent<EnemyAttackAgent>().EnableFireAbility;
+            if (!_moveAgentsDictionary.ContainsKey(enemy))
+            {
+                var newMoveAgent = new EnemyMoveAgent(enemy.GetComponent<MoveComponent>(), enemy.transform); 
+                _gamecycleManager.AddListener(newMoveAgent);
+                _moveAgentsDictionary.Add(enemy, newMoveAgent);
+            }
+            var attackPosition = _enemyPositions.RandomAttackPosition();
+            _moveAgentsDictionary[enemy].SetDestination(attackPosition.position);
+            _moveAgentsDictionary[enemy].OnDestinationReached +=
+                _attackAgentsDictionary[enemy].EnableFireAbility;
         }
 
         private void OnDestroyed(GameObject enemy)
         {
             enemy.GetComponent<HitPointsComponent>().OnHpEmpty -= OnDestroyed;
-            enemy.GetComponent<EnemyAttackAgent>().OnFire -= OnFire;
-            enemy.GetComponent<EnemyAttackAgent>().Reset();
-            enemy.GetComponent<EnemyMoveAgent>().OnDestinationReached -=
-                enemy.GetComponent<EnemyAttackAgent>().EnableFireAbility;
+            _attackAgentsDictionary[enemy].OnFire -= OnFire;
+            _attackAgentsDictionary[enemy].Reset();
+            _moveAgentsDictionary[enemy].OnDestinationReached -=
+                _attackAgentsDictionary[enemy].EnableFireAbility;
 
             _enemyPool.UnspawnEnemy(enemy);
         }

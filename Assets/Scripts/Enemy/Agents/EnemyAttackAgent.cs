@@ -2,18 +2,23 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    public sealed class EnemyAttackAgent : MonoBehaviour, Listeners.IFixUpdaterListener
+    public sealed class EnemyAttackAgent: Listeners.IFixUpdaterListener
     {
         public delegate void FireHandler(Vector2 position, Vector2 direction);
-
         public event FireHandler OnFire;
-
-        [SerializeField] private WeaponComponent _weaponComponent;
-        [SerializeField] private float _countdown;
 
         private bool _canFire;
         private GameObject _target;
         private float _currentTime;
+
+        private readonly WeaponComponent _weaponComponent;
+        private readonly float _countdown;
+
+        public EnemyAttackAgent(WeaponComponent weaponComponent, float countdown)
+        {
+            _weaponComponent = weaponComponent;
+            _countdown = countdown;
+        }
 
         public void SetTarget(GameObject target)
         {
