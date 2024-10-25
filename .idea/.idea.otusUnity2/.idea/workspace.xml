@@ -6,13 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyMoveAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyMoveAgent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresentprSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -72,9 +68,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyMoveAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterStat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresentprSceneInstaller.cs" />
       </list>
     </option>
   </component>
@@ -133,7 +134,8 @@
       <workItem from="1726577183840" duration="9660000" />
       <workItem from="1727802924730" duration="10806000" />
       <workItem from="1727863111654" duration="5050000" />
-      <workItem from="1728476001325" duration="15479000" />
+      <workItem from="1728476001325" duration="16205000" />
+      <workItem from="1729862861339" duration="4028000" />
     </task>
     <servers />
   </component>
