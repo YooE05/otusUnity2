@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using System.ComponentModel;
 
 namespace Lessons.Architecture.PM
 {
@@ -10,30 +9,31 @@ namespace Lessons.Architecture.PM
         public event Action<string> OnDescriptionChanged;
         public event Action<Sprite> OnIconChanged; 
 
-        [ReadOnly(true)]
         public string Name { get; private set; }
-
-        [ReadOnly(true)]
+        
         public string Description { get; private set; }
 
-        [ReadOnly(true)]
         public Sprite Icon { get; private set; }
 
-        [ContextMenu("ChangeName")]
+        public UserInfo(string username, CharacterInfoData characterInfoData)
+        {
+            ChangeName(username);
+            ChangeIcon(characterInfoData.Icon);
+            ChangeDescription(characterInfoData.Description);
+        }
+        
         public void ChangeName(string name)
         {
             Name = name;
             OnNameChanged?.Invoke(name);
         }
 
-        [ContextMenu("ChangeDescription")]
         public void ChangeDescription(string description)
         {
             Description = description;
             OnDescriptionChanged?.Invoke(description);
         }
 
-        [ContextMenu("ChangeIcon")]
         public void ChangeIcon(Sprite icon)
         {
            Icon = icon;

@@ -1,19 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 namespace Lessons.Architecture.PM
 {
-    public sealed class CharacterInfo
+    public sealed class CharacterStatsManager
     {
         public event Action<CharacterStat> OnStatAdded;
         public event Action<CharacterStat> OnStatRemoved;
 
-        //[ShowInInspector]
         private readonly HashSet<CharacterStat> _stats = new HashSet<CharacterStat>();
 
-        [ContextMenu("AddStat")]
+        public CharacterStatsManager(List<CharacterStatData> initStats)
+        {
+            for (int i = 0; i < initStats.Count; i++)
+            {
+                var stat = new CharacterStat(initStats[i]);
+                AddStat(stat);
+            }
+        }
+
         public void AddStat(CharacterStat stat)
         {
             if (_stats.Add(stat))
@@ -22,7 +28,6 @@ namespace Lessons.Architecture.PM
             }
         }
 
-        [ContextMenu("RemoveStat")]
         public void RemoveStat(CharacterStat stat)
         {
             if (_stats.Remove(stat))
@@ -47,6 +52,21 @@ namespace Lessons.Architecture.PM
         public CharacterStat[] GetStats()
         {
             return _stats.ToArray();
+        }
+
+        public void AddStatValue(string name, int value)
+        {
+            _stats.Any(s => s.Name == name);
+            if (_stats.Any(s => s.Name == name))
+            {
+                var stat = GetStat(name);
+                GetStat(name).ChangeValue(stat.Value + value);
+            }
+            else
+            {
+                var newStat = new CharacterStat(name, value);
+                AddStat(newStat);
+            }
         }
     }
 }
