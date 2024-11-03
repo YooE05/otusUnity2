@@ -8,22 +8,17 @@ namespace Lessons.Architecture.PM
 {
     public class ProfilePopup : MonoBehaviour
     {
+        [Header("Main")] 
+        [SerializeField] private Button _closeButton;
+        
+        [Header("Stats")] 
         [SerializeField] private Transform _statsContainer;
         [SerializeField] private CharacterStatView _statViewPrefab;
         private readonly List<CharacterStatView> _statsViews = new List<CharacterStatView>();
 
-        [SerializeField] private Button _closeButton;
-
         [Header("LevelUp")] 
-        [SerializeField] private Slider _slider;
-        [SerializeField] private TextMeshProUGUI _sliderText;
+        [SerializeField] private PlayerLevelView _levelView;
 
-        [SerializeField] private TextMeshProUGUI _levelText;
-
-        [SerializeField] private Button _levelUpButton;
-        [SerializeField] private Sprite _activeLevelUpSprite;
-        [SerializeField] private Sprite _inactiveLevelUpSprite;
-        
         [Header("UserInfo")] [SerializeField] private Image _characterIcon;
         [SerializeField] private TextMeshProUGUI _descriptionText;
         [SerializeField] private TextMeshProUGUI _nicknameText;
@@ -38,50 +33,33 @@ namespace Lessons.Architecture.PM
             }
 
             gameObject.SetActive(true);
-
             _presenter = (ProfilePresenter) args;
-
             _closeButton.onClick.AddListener(Hide);
-
-            _levelUpButton.onClick.AddListener(IncreaseAllStats);
-
-            // _slider.value = _presenter.SliderValue;
-            //  _sliderText.text = _presenter.SliderText;
-            //  _levelText.text = _presenter.Level;
-            //  CheckLevelUp(_presenter);
 
             _nicknameText.text = _presenter.Username;
             _descriptionText.text = _presenter.Description;
             _characterIcon.sprite = _presenter.Icon;
 
-            _presenter.OnStatPresenterAdded += CreateStatPresenterView;
+            _levelView.Init(_presenter.LevelPresenter);
 
             foreach (var presenter in _presenter.StatPresenters)
             {
-                CreateStatPresenterView(presenter);
+                CreateStatView(presenter);
             }
+
+            _presenter.OnStatPresenterAdded += CreateStatView;
         }
 
-        private void CreateStatPresenterView(CharacterStatPresenter statPresenter)
+        private void CreateStatView(CharacterStatPresenter statPresenter)
         {
             CharacterStatView stat = Instantiate(_statViewPrefab, _statsContainer);
             stat.Init(statPresenter);
             _statsViews.Add(stat);
         }
 
-        private void IncreaseAllStats()
-        {
-            _presenter.InreaseStats();
-        }
-
-        private void CheckLevelUp(ProfilePresenter presenter)
-        {
-            _levelUpButton.image.sprite = presenter.CanLevelUp() ? _activeLevelUpSprite : _inactiveLevelUpSprite;
-        }
-
         private void Hide()
         {
-            _presenter.OnStatPresenterAdded -= CreateStatPresenterView;
+            _presenter.OnStatPresenterAdded -= CreateStatView;
             for (var i = _statsViews.Count - 1; i >= 0; i--)
             {
                 CharacterStatView productView = _statsViews[i];
@@ -90,19 +68,8 @@ namespace Lessons.Architecture.PM
 
             _statsViews.Clear();
 
-            gameObject.SetActive(false);
             _closeButton.onClick.RemoveListener(Hide);
-            _levelUpButton.onClick.RemoveListener(IncreaseAllStats);
-        }
-
-        public void UpdateStats()
-        {
-            //_presenter?.UpdatePresentersData();
-
-            for (var i = 0; i < _statsViews.Count; i++)
-            {
-                _statsViews[i].UpdateValue();
-            }
+            gameObject.SetActive(false);
         }
     }
 
@@ -111,17 +78,16 @@ namespace Lessons.Architecture.PM
         public event Action<CharacterStatPresenter> OnStatPresenterAdded;
 
         private readonly UserInfo _userData;
-
         private readonly CharacterStatsManager _statsManager;
-
         private readonly HashSet<CharacterStatPresenter> _statPresenters = new HashSet<CharacterStatPresenter>();
-        // private readonly PlayerLevel _levelData;
+        private readonly PlayerLevel _levelInfo;
+        private readonly PlayerLevelPresenter _levelPresenter;
 
-        public ProfilePresenter(UserInfo userData, CharacterStatsManager statsManager)
+        public ProfilePresenter(UserInfo userData, CharacterStatsManager statsManager, PlayerLevel levelInfo)
         {
             _userData = userData;
-            _statsManager = statsManager;
 
+            _statsManager = statsManager;
             var allStats = _statsManager.GetStats();
             for (int i = 0; i < allStats.Length; i++)
             {
@@ -129,13 +95,17 @@ namespace Lessons.Architecture.PM
             }
 
             _statsManager.OnStatAdded += CreatePresenter;
+
+            _levelInfo = levelInfo;
+            _levelPresenter = new PlayerLevelPresenter(_levelInfo);
+            _levelPresenter.OnLevelUp += InreaseStats;
         }
 
         public string Username => _userData.Name;
         public string Description => _userData.Description;
         public Sprite Icon => _userData.Icon;
-
         public HashSet<CharacterStatPresenter> StatPresenters => _statPresenters;
+        public PlayerLevelPresenter LevelPresenter => _levelPresenter;
 
         private void CreatePresenter(CharacterStat characterStat)
         {
@@ -146,37 +116,15 @@ namespace Lessons.Architecture.PM
             }
         }
 
-        public bool CanLevelUp()
+        private void InreaseStats()
         {
-            return true;
-        }
-
-        /*public void UpdatePresentersData()
-        {
-            var allStats = _statsManager.GetStats();
-
-            foreach (var stat in allStats)
-            {
-                var statPresenter = _statPresenters.Find(s => s.Name == stat.Name);
-                if (statPresenter != null)
-                {
-                    statPresenter.SetValue(stat.Value);
-                }
-                else
-                {
-                    CreatePresenter(stat);
-                }
-            }
-        }*/
-
-        public void InreaseStats()
-        {
-           _statsManager.IncreaseAllStats();
+            _statsManager.IncreaseAllStats();
         }
 
         ~ProfilePresenter()
         {
             _statsManager.OnStatAdded -= CreatePresenter;
+            _levelPresenter.OnLevelUp -= InreaseStats;
         }
     }
 }

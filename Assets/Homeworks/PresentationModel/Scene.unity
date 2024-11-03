@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0b256d510ed45438bcfd2f0ba41bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _additionalExp: 0
+  _additionalExp: 50
   _profilePopup: {fileID: 1335643420}
   _statName: Mana
   _statValue: 10
@@ -1761,18 +1761,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde40a04e027c704ebd834b1d4f79d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _closeButton: {fileID: 914546238}
   _statsContainer: {fileID: 1004858379}
   _statViewPrefab: {fileID: 4331207864806082168, guid: bd297cb0e28b1cb49adbc7c0b91e0522,
     type: 3}
-  _closeButton: {fileID: 914546238}
-  _slider: {fileID: 252705182}
-  _sliderText: {fileID: 1191507874}
-  _levelText: {fileID: 1286006374}
-  _levelUpButton: {fileID: 743865476}
-  _activeLevelUpSprite: {fileID: 21300000, guid: cf4c106fc0fd9489580b9e716e4eed17,
-    type: 3}
-  _inactiveLevelUpSprite: {fileID: 21300000, guid: 9ef0c11205b6f41a88353f491a8396d1,
-    type: 3}
+  _levelView: {fileID: 1857663573}
   _characterIcon: {fileID: 1548504733}
   _descriptionText: {fileID: 1346294999}
   _nicknameText: {fileID: 27061593}
@@ -2317,11 +2310,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4753b453d90a8a4db9e85dc71640ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 0}
-  _levelText: {fileID: 0}
-  _levelUpButton: {fileID: 0}
-  _activeLevelUpSprite: {fileID: 0}
-  _inactiveLevelUpSprite: {fileID: 0}
+  _slider: {fileID: 252705182}
+  _sliderText: {fileID: 1191507874}
+  _levelText: {fileID: 1286006374}
+  _levelUpButton: {fileID: 743865476}
+  _activeSprite: {fileID: 21300000, guid: cf4c106fc0fd9489580b9e716e4eed17, type: 3}
+  _inactiveSprite: {fileID: 21300000, guid: 9ef0c11205b6f41a88353f491a8396d1, type: 3}
 --- !u!1 &1940488060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,6 +2351,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 224b7096cea944d46bdb8ccddada8647, type: 2}
   - {fileID: 11400000, guid: 66dc580ab05c8c247b8b0bc0239aa218, type: 2}
   - {fileID: 11400000, guid: 946dfaa78db9dd244a93673f15fdb1cd, type: 2}
+  _increaseStatPercent: 20
 --- !u!114 &1940488062
 MonoBehaviour:
   m_ObjectHideFlags: 0

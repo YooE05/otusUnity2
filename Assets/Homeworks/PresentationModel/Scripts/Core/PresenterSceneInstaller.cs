@@ -15,6 +15,7 @@ namespace Lessons.Architecture.PM
             Container.Bind<UserInfo>().AsSingle().WithArguments("@YooE", _initCharacterInfo).NonLazy();
             Container.Bind<CharacterStatsManager>().AsSingle().WithArguments(_initStats, _increaseStatPercent)
                 .NonLazy();
+            Container.Bind<PlayerLevel>().AsSingle().WithArguments(2, 100).NonLazy();
 
             /*Container.BindInterfacesAndSelfTo<GamecycleManager>().AsSingle().NonLazy();
             Container.Bind<LevelBounds>().FromInstance(_levelBounds).AsSingle();

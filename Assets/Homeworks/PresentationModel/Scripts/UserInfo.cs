@@ -21,6 +21,12 @@ namespace Lessons.Architecture.PM
             ChangeIcon(characterInfoData.Icon);
             ChangeDescription(characterInfoData.Description);
         }
+
+        public void ChangeCharacter(CharacterInfoData characterInfoData)
+        {
+            ChangeIcon(characterInfoData.Icon);
+            ChangeDescription(characterInfoData.Description);
+        }
         
         public void ChangeName(string name)
         {

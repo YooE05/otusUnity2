@@ -13,29 +13,32 @@ namespace Lessons.Architecture.PM
 
         private UserInfo _userInfo;
         private CharacterStatsManager _statsManager;
-        
+        private PlayerLevel _playerLevel;
+
         [Inject]
-        public void Construct( UserInfo userInfo, CharacterStatsManager statsManager)
+        public void Construct(UserInfo userInfo, CharacterStatsManager statsManager, PlayerLevel playerLevel)
         {
             _userInfo = userInfo;
             _statsManager = statsManager;
+            _playerLevel = playerLevel;
         }
 
+        [ContextMenu("AddExpirience")]
         public void AddExp()
         {
+            _playerLevel.AddExperience(_additionalExp);
         }
-        
+
         [ContextMenu("AddStatValue")]
         public void AddStatValue()
         {
-            _statsManager.AddStatValue(_statName,_statValue);
-           // _profilePopup.UpdateStats();
+            _statsManager.AddStatValue(_statName, _statValue);
         }
-       
+
         [ContextMenu("ShowProfilePopup")]
         public void ShowProfilePopup()
         {
-            _profilePopup.Show(new ProfilePresenter(_userInfo, _statsManager));
+            _profilePopup.Show(new ProfilePresenter(_userInfo, _statsManager, _playerLevel));
         }
     }
 }
