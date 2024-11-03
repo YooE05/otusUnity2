@@ -784,8 +784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _additionalExp: 0
   _profilePopup: {fileID: 1335643420}
-  _statName: Health
-  _statValue: 5
+  _statName: Mana
+  _statValue: 10
 --- !u!1 &341126119
 GameObject:
   m_ObjectHideFlags: 0

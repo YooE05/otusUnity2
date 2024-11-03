@@ -10,9 +10,11 @@ namespace Lessons.Architecture.PM
         public event Action<CharacterStat> OnStatRemoved;
 
         private readonly HashSet<CharacterStat> _stats = new HashSet<CharacterStat>();
+        private readonly int _increaseStatPercent;
 
-        public CharacterStatsManager(List<CharacterStatData> initStats)
+        public CharacterStatsManager(List<CharacterStatData> initStats, int increaseStatPercent)
         {
+            _increaseStatPercent = increaseStatPercent;
             for (int i = 0; i < initStats.Count; i++)
             {
                 var stat = new CharacterStat(initStats[i]);
@@ -20,7 +22,7 @@ namespace Lessons.Architecture.PM
             }
         }
 
-        public void AddStat(CharacterStat stat)
+        private void AddStat(CharacterStat stat)
         {
             if (_stats.Add(stat))
             {
@@ -56,8 +58,8 @@ namespace Lessons.Architecture.PM
 
         public void AddStatValue(string name, int value)
         {
-            _stats.Any(s => s.Name == name);
-            if (_stats.Any(s => s.Name == name))
+            var any = _stats.Any(s => s.Name == name);
+            if (any)
             {
                 var stat = GetStat(name);
                 GetStat(name).ChangeValue(stat.Value + value);
@@ -66,6 +68,14 @@ namespace Lessons.Architecture.PM
             {
                 var newStat = new CharacterStat(name, value);
                 AddStat(newStat);
+            }
+        }
+
+        public void IncreaseAllStats()
+        {
+            foreach (var stat in _stats)
+            {
+                stat.ChangeValue((int) (stat.Value * (1 + _increaseStatPercent / 100f)));
             }
         }
     }

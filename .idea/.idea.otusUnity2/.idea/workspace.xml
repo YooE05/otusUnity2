@@ -6,24 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterInfo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterStat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterStat.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresentprSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresentprSceneInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +24,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Lesson_9/Assets/Code/Currency/Money/MoneyStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/e0/9fe1dc6e/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/30/c18ccb13/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,13 +84,13 @@
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterStatsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/CharacterStatPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs" />
       </list>
     </option>
@@ -135,10 +126,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12112">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12112" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -163,7 +154,8 @@
       <workItem from="1729862861339" duration="4028000" />
       <workItem from="1729880872608" duration="3799000" />
       <workItem from="1729924941678" duration="7487000" />
-      <workItem from="1729959203188" duration="11612000" />
+      <workItem from="1729959203188" duration="13769000" />
+      <workItem from="1730643073209" duration="5969000" />
     </task>
     <servers />
   </component>
@@ -226,70 +218,70 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="437" height="464" key="DebuggerActiveHint/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966740933" />
-    <state width="2517" height="247" key="GridCell.Tab.0.bottom" timestamp="1729966704026">
+    <state width="2517" height="247" key="GridCell.Tab.0.bottom" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966704026" />
-    <state width="2517" height="247" key="GridCell.Tab.0.center" timestamp="1729966704026">
+    <state width="2517" height="247" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.0.center" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966704026" />
-    <state width="2517" height="247" key="GridCell.Tab.0.left" timestamp="1729966704026">
+    <state width="2517" height="247" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.0.left" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966704026" />
-    <state width="2517" height="247" key="GridCell.Tab.0.right" timestamp="1729966704026">
+    <state width="2517" height="247" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.0.right" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966704026" />
-    <state width="2517" height="247" key="GridCell.Tab.1.bottom" timestamp="1729966708272">
+    <state width="2517" height="247" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.1.bottom" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966708272" />
-    <state width="2517" height="247" key="GridCell.Tab.1.center" timestamp="1729966708272">
+    <state width="2517" height="247" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.1.center" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966708272" />
-    <state width="2517" height="247" key="GridCell.Tab.1.left" timestamp="1729966708272">
+    <state width="2517" height="247" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.1.left" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966708272" />
-    <state width="2517" height="247" key="GridCell.Tab.1.right" timestamp="1729966708272">
+    <state width="2517" height="247" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.1.right" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966708272" />
-    <state width="2517" height="247" key="GridCell.Tab.2.bottom" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.2.bottom" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.2.center" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.2.center" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.2.left" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.2.left" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.2.right" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.2.right" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.3.bottom" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.3.bottom" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.3.center" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.3.center" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.3.left" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.3.left" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
-    <state width="2517" height="247" key="GridCell.Tab.3.right" timestamp="1729966703843">
+    <state width="2517" height="247" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
+    <state width="2517" height="247" key="GridCell.Tab.3.right" timestamp="1729977369773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="247" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966703843" />
+    <state width="2517" height="247" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729977369773" />
     <state x="1047" y="424" key="RiderGenerateDialog" timestamp="1728481771897">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -302,10 +294,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="464" y="437" width="1524" height="911" key="SettingsEditor/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729964175586" />
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1728492934497">
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1730649116720">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1728492934497" />
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730649116720" />
     <state x="1000" y="139" width="1920" height="1388" key="dock-window-1" timestamp="1728490421662">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

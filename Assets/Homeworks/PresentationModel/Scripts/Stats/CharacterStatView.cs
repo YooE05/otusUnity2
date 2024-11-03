@@ -13,8 +13,14 @@ namespace Lessons.Architecture.PM
         public void Init(CharacterStatPresenter presenter)
         {
             _presenter = presenter;
+            _presenter.OnStatValueWasChanged += SetValue;
 
             SetName(_presenter.Name);
+            SetValue(_presenter.Value);
+        }
+
+        public void UpdateValue()
+        {
             SetValue(_presenter.Value);
         }
 
@@ -27,10 +33,11 @@ namespace Lessons.Architecture.PM
         {
             _value.text = newValue;
         }
-        
-        public void UpdateValue()
+
+        ~CharacterStatView()
         {
-            _value.text = _presenter.Value;
+            if (_presenter?.OnStatValueWasChanged != null)
+                _presenter.OnStatValueWasChanged -= SetValue;
         }
     }
 }

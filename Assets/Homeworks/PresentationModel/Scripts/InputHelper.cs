@@ -24,11 +24,12 @@ namespace Lessons.Architecture.PM
         public void AddExp()
         {
         }
+        
         [ContextMenu("AddStatValue")]
         public void AddStatValue()
         {
             _statsManager.AddStatValue(_statName,_statValue);
-            _profilePopup.UpdateStats();
+           // _profilePopup.UpdateStats();
         }
        
         [ContextMenu("ShowProfilePopup")]

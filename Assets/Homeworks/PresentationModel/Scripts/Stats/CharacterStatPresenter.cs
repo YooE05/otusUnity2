@@ -2,24 +2,40 @@
 
 namespace Lessons.Architecture.PM
 {
-    public class CharacterStatPresenter: IPresenter
+    public class CharacterStatPresenter : IPresenter
     {
-        private string _name;
-        private int _value;
-        
-        public string Name => _name;
+        public Action<string> OnStatValueWasChanged;
+        public string Name => _characterStat.Name;
+        public string Value => _characterStat.Value.ToString();
 
-        public string Value => _value.ToString(); 
+        private readonly CharacterStat _characterStat;
 
         public CharacterStatPresenter(CharacterStat characterStat)
         {
-            _name = characterStat.Name;
-            _value = characterStat.Value;
+            _characterStat = characterStat;
+            _characterStat.OnValueChanged += ChangeStatViewValue;
+        }
+
+        private void ChangeStatViewValue(int newValue)
+        {
+            OnStatValueWasChanged?.Invoke(newValue.ToString());
         }
 
         public void SetValue(int newValue)
         {
-            _value = newValue;
+            _characterStat.ChangeValue(newValue);
+        }
+
+        public void IncreaseValueByPercent(int percent)
+        {
+            var increasedValue = (int) (_characterStat.Value * (1 + percent / 100f));
+            _characterStat.ChangeValue(increasedValue);
+            OnStatValueWasChanged?.Invoke(increasedValue.ToString());
+        }
+
+        ~CharacterStatPresenter()
+        {
+            _characterStat.OnValueChanged -= ChangeStatViewValue;
         }
     }
 }
