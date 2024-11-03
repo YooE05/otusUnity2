@@ -16,16 +16,6 @@ namespace Lessons.Architecture.PM
             Container.Bind<CharacterStatsManager>().AsSingle().WithArguments(_initStats, _increaseStatPercent)
                 .NonLazy();
             Container.Bind<PlayerLevel>().AsSingle().WithArguments(2, 100).NonLazy();
-
-            /*Container.BindInterfacesAndSelfTo<GamecycleManager>().AsSingle().NonLazy();
-            Container.Bind<LevelBounds>().FromInstance(_levelBounds).AsSingle();
-            Container.BindInterfacesAndSelfTo<BulletSystem>().AsSingle()
-                .WithArguments(_levelBounds, _bulletsParent, _activeObjectsParent, _bulletPrefab, _initBulletsCount)
-                .NonLazy();*/
-        }
-
-        public void AddSMTH()
-        {
         }
     }
 }

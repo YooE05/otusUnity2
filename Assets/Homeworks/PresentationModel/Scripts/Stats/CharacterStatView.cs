@@ -19,11 +19,6 @@ namespace Lessons.Architecture.PM
             SetValue(_presenter.Value);
         }
 
-        public void UpdateValue()
-        {
-            SetValue(_presenter.Value);
-        }
-
         private void SetName(string newName)
         {
             _name.text = newName;

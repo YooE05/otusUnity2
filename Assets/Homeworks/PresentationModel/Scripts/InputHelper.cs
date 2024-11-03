@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -10,6 +11,7 @@ namespace Lessons.Architecture.PM
 
         [SerializeField] private string _statName;
         [SerializeField] private int _statValue;
+        [SerializeField] private List<CharacterInfoData> _enableCharacters;
 
         private UserInfo _userInfo;
         private CharacterStatsManager _statsManager;
@@ -21,9 +23,11 @@ namespace Lessons.Architecture.PM
             _userInfo = userInfo;
             _statsManager = statsManager;
             _playerLevel = playerLevel;
+
+            _profilePopup.Hide();
         }
 
-        [ContextMenu("AddExpirience")]
+        [ContextMenu("AddExperience")]
         public void AddExp()
         {
             _playerLevel.AddExperience(_additionalExp);
@@ -38,7 +42,8 @@ namespace Lessons.Architecture.PM
         [ContextMenu("ShowProfilePopup")]
         public void ShowProfilePopup()
         {
-            _profilePopup.Show(new ProfilePresenter(_userInfo, _statsManager, _playerLevel));
+            _profilePopup.Hide();
+            _profilePopup.Show(new ProfilePresenter(_userInfo, _statsManager, _playerLevel, _enableCharacters));
         }
     }
 }

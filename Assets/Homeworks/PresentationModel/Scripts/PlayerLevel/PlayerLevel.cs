@@ -6,6 +6,7 @@ namespace Lessons.Architecture.PM
     {
         public event Action OnLevelUp;
         public event Action<int> OnExperienceChanged;
+
         public PlayerLevel(int currentLevel, int currentExperience)
         {
             CurrentLevel = currentLevel;
@@ -14,6 +15,7 @@ namespace Lessons.Architecture.PM
 
         public int CurrentLevel { get; private set; } = 1;
         public int CurrentExperience { get; private set; }
+
         public int RequiredExperience
         {
             get { return 100 * (CurrentLevel + 1); }
@@ -28,12 +30,11 @@ namespace Lessons.Architecture.PM
 
         public void LevelUp()
         {
-            if (CanLevelUp())
-            {
-                CurrentExperience = 0;
-                CurrentLevel++;
-                OnLevelUp?.Invoke();
-            }
+            if (CanLevelUp() == false) return;
+
+            CurrentExperience = 0;
+            CurrentLevel++;
+            OnLevelUp?.Invoke();
         }
 
         public bool CanLevelUp()

@@ -7,9 +7,6 @@
         <e p="Homeworks" t="Include">
           <e p="PresentationModel" t="Include">
             <e p="Scripts" t="Include">
-              <e p="CharacterInfo" t="Include">
-                <e p="CharacterInfoData.cs" t="Include" />
-              </e>
               <e p="Core" t="Include">
                 <e p="PresenterSceneInstaller.cs" t="Include" />
               </e>
@@ -17,9 +14,13 @@
               <e p="IPresenter.cs" t="Include" />
               <e p="PlayerLevel" t="Include">
                 <e p="PlayerLevel.cs" t="Include" />
+                <e p="PlayerLevelPresenter.cs" t="Include" />
                 <e p="PlayerLevelView.cs" t="Include" />
               </e>
-              <e p="ProfilePopUp.cs" t="Include" />
+              <e p="ProfilePopup" t="Include">
+                <e p="ProfilePopUp.cs" t="Include" />
+                <e p="ProfilePresenter.cs" t="Include" />
+              </e>
               <e p="Stats" t="Include">
                 <e p="CharacterStat.cs" t="Include" />
                 <e p="CharacterStatData.cs" t="Include" />
@@ -27,7 +28,12 @@
                 <e p="CharacterStatsManager.cs" t="Include" />
                 <e p="CharacterStatView.cs" t="Include" />
               </e>
-              <e p="UserInfo.cs" t="Include" />
+              <e p="UserInfo" t="Include">
+                <e p="CharacterInfoData.cs" t="Include" />
+                <e p="UserInfo.cs" t="Include" />
+                <e p="UserInfoPresenter.cs" t="Include" />
+                <e p="UserInfoView.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>

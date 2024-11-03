@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +16,16 @@ namespace Lessons.Architecture.PM
 
         private PlayerLevelPresenter _presenter;
 
+        private void OnEnable()
+        {
+            _levelUpButton.onClick.AddListener(OnLevelUp);
+        }
+
+        private void OnDisable()
+        {
+            _levelUpButton.onClick.RemoveAllListeners();
+        }
+
         public void Init(PlayerLevelPresenter levelPresenter)
         {
             _presenter = levelPresenter;
@@ -24,7 +33,6 @@ namespace Lessons.Architecture.PM
             SetupValues();
 
             _presenter.OnExperienceCountChanged += SetupValues;
-            _levelUpButton.onClick.AddListener(OnLevelUp);
         }
 
         private void SetupValues()
@@ -56,6 +64,8 @@ namespace Lessons.Architecture.PM
 
         private void OnLevelUp()
         {
+            if(_presenter==null) return;
+            
             _presenter.LevelUp();
             SetupValues();
         }
@@ -66,47 +76,6 @@ namespace Lessons.Architecture.PM
             {
                 _presenter.OnExperienceCountChanged -= SetupValues;
             }
-
-            _levelUpButton.onClick.RemoveAllListeners();
-        }
-    }
-
-    public class PlayerLevelPresenter : IPresenter
-    {
-        public event Action OnExperienceCountChanged;
-        public event Action OnLevelUp;
-
-        private readonly PlayerLevel _playerLevelInfo;
-
-        public PlayerLevelPresenter(PlayerLevel playerLevelInfo)
-        {
-            _playerLevelInfo = playerLevelInfo;
-            _playerLevelInfo.OnExperienceChanged += UpdateView;
-        }
-
-        public float SliderQuotient =>
-            Mathf.Clamp((float) _playerLevelInfo.CurrentExperience / _playerLevelInfo.RequiredExperience, 0f, 1f);
-
-        public string SliderText =>
-            $"XP: {_playerLevelInfo.CurrentExperience} / {_playerLevelInfo.RequiredExperience} ";
-
-        public string Level => _playerLevelInfo.CurrentLevel.ToString();
-        public bool CanLevelUp => _playerLevelInfo.CanLevelUp();
-
-        private void UpdateView(int _)
-        {
-            OnExperienceCountChanged?.Invoke();
-        }
-
-        public void LevelUp()
-        {
-            _playerLevelInfo.LevelUp();
-            OnLevelUp?.Invoke();
-        }
-
-        ~PlayerLevelPresenter()
-        {
-            _playerLevelInfo.OnExperienceChanged -= UpdateView;
         }
     }
 }

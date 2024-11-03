@@ -24,13 +24,13 @@ namespace Lessons.Architecture.PM
         public void SetValue(int newValue)
         {
             _characterStat.ChangeValue(newValue);
+            OnStatValueWasChanged?.Invoke(newValue.ToString());
         }
 
         public void IncreaseValueByPercent(int percent)
         {
             var increasedValue = (int) (_characterStat.Value * (1 + percent / 100f));
-            _characterStat.ChangeValue(increasedValue);
-            OnStatValueWasChanged?.Invoke(increasedValue.ToString());
+            SetValue(increasedValue);
         }
 
         ~CharacterStatPresenter()
