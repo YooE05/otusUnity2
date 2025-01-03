@@ -28,6 +28,4 @@ namespace Homeworks.SaveLoad
         protected abstract TData ExtractData(TService service);
         protected abstract void SetupData(TService service, TData data);
     }
-    
-   // public class 
 }

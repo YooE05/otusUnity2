@@ -34,6 +34,8 @@ namespace Homeworks.SaveLoad
         {
             string jsonGameState = JsonConvert.SerializeObject(_gameState);
             PlayerPrefs.SetString(SaveKey, jsonGameState);
+            
+            Debug.Log("All data was saved");
         }
 
         public void LoadState()
@@ -43,6 +45,8 @@ namespace Homeworks.SaveLoad
                 string jsonGameState = PlayerPrefs.GetString(SaveKey);
                 _gameState = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonGameState);
             }
+            
+            Debug.Log("All data was loaded");
         }
     }
 }
