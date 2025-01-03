@@ -40,9 +40,19 @@
           </e>
           <e p="SaveLoad" t="Include">
             <e p="Scripts" t="Include">
+              <e p="Core" t="Include">
+                <e p="SaveLoadSceneInstaller.cs" t="Include" />
+              </e>
               <e p="PlayerResources.cs" t="Include" />
               <e p="ResourceObject.cs" t="Include" />
               <e p="ResourceType.cs" t="Include" />
+              <e p="SavingSystem" t="Include">
+                <e p="DataSaver.cs" t="Include" />
+                <e p="GameRepository.cs" t="Include" />
+                <e p="IDataSaver.cs" t="Include" />
+                <e p="IGameRepository.cs" t="Include" />
+                <e p="SaveLoadManager.cs" t="Include" />
+              </e>
               <e p="UnitObject.cs" t="Include" />
             </e>
           </e>
