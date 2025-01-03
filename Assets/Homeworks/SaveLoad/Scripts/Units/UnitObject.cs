@@ -5,12 +5,12 @@ namespace Homeworks.SaveLoad
     public sealed class UnitObject : MonoBehaviour
     {
         [SerializeField]
-        public int hitPoints;
+        public int HitPoints;
 
         [SerializeField]
-        public int speed;
+        public int Speed;
 
         [SerializeField]
-        public int damage;
+        public int Damage;
     }
 }

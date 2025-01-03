@@ -22,11 +22,15 @@ namespace Homeworks.SaveLoad
             data = JsonConvert.DeserializeObject<T>(json);
             return true;
         }
-        
+
         public void SetData<T>(T data)
         {
             var key = typeof(T).ToString();
-            string json = JsonConvert.SerializeObject(data);
+            string json = JsonConvert.SerializeObject(data, Formatting.Indented,
+                new JsonSerializerSettings
+                {
+                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                });
             _gameState[key] = json;
         }
 
@@ -34,7 +38,7 @@ namespace Homeworks.SaveLoad
         {
             string jsonGameState = JsonConvert.SerializeObject(_gameState);
             PlayerPrefs.SetString(SaveKey, jsonGameState);
-            
+
             Debug.Log("All data was saved");
         }
 
@@ -45,7 +49,7 @@ namespace Homeworks.SaveLoad
                 string jsonGameState = PlayerPrefs.GetString(SaveKey);
                 _gameState = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonGameState);
             }
-            
+
             Debug.Log("All data was loaded");
         }
     }
