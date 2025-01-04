@@ -1,6 +1,6 @@
 ﻿namespace Homeworks.SaveLoad
 {
-    public class UnitsDataSaver: DataSaver<UnitData[], UnitsHandler>
+    public sealed class UnitsDataSaver: DataSaver<UnitData[], UnitsHandler>
     {
         protected override UnitData[] ExtractData(UnitsHandler service)
         {

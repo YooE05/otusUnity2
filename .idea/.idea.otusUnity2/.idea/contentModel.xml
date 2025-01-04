@@ -43,25 +43,33 @@
               <e p="Core" t="Include">
                 <e p="SaveLoadSceneInstaller.cs" t="Include" />
               </e>
-              <e p="PlayerResources.cs" t="Include" />
-              <e p="ResourceObject.cs" t="Include" />
-              <e p="ResourcesHandler.cs" t="Include" />
-              <e p="ResourceType.cs" t="Include" />
+              <e p="EntitiesContainer.cs" t="Include" />
+              <e p="Resources" t="Include">
+                <e p="PlayerResources.cs" t="Include" />
+                <e p="PlayerResourcesHandler.cs" t="Include" />
+                <e p="ResourceObject.cs" t="Include" />
+                <e p="ResourceType.cs" t="Include" />
+              </e>
               <e p="SavingSystem" t="Include">
                 <e p="DataSaver.cs" t="Include" />
-                <e p="DataSavers" t="Include">
-                  <e p="PlayerResourcesSaver.cs" t="Include" />
-                  <e p="UnitsDataSaver.cs" t="Include" />
-                </e>
                 <e p="GameRepository.cs" t="Include" />
                 <e p="IDataSaver.cs" t="Include" />
                 <e p="IGameRepository.cs" t="Include" />
+                <e p="ResourcesData" t="Include">
+                  <e p="MapResoucesSaver.cs" t="Include" />
+                  <e p="MapResourcesHandler.cs" t="Include" />
+                  <e p="PlayerResourcesSaver.cs" t="Include" />
+                </e>
                 <e p="SaveLoadManager.cs" t="Include" />
+                <e p="UnitsData" t="Include">
+                  <e p="UnitData.cs" t="Include" />
+                  <e p="UnitsDataSaver.cs" t="Include" />
+                </e>
               </e>
-              <e p="UnitData.cs" t="Include" />
-              <e p="UnitObject.cs" t="Include" />
-              <e p="UnitsContainer.cs" t="Include" />
-              <e p="UnitsHandler.cs" t="Include" />
+              <e p="Units" t="Include">
+                <e p="UnitObject.cs" t="Include" />
+                <e p="UnitsHandler.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>

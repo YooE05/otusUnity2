@@ -5,15 +5,15 @@ namespace Homeworks.SaveLoad
 {
     public sealed class UnitsHandler
     {
-        private readonly UnitsContainer _unitsContainer;
+        private readonly EntitiesContainer _entitiesContainer;
 
         private List<UnitData> _unitsData = new List<UnitData>();
         private List<GameObject> _unitsGOs = new List<GameObject>();
 
-        public UnitsHandler(UnitsContainer unitsContainer)
+        public UnitsHandler(EntitiesContainer entitiesContainer)
         {
-            _unitsContainer = unitsContainer;
-            _unitsGOs = _unitsContainer.UnitsGOs;
+            _entitiesContainer = entitiesContainer;
+            _unitsGOs = _entitiesContainer.UnitsGOs;
         }
 
         public UnitData[] GetAllUnitsData()

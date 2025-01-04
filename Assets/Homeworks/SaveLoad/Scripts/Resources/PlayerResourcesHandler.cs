@@ -5,7 +5,7 @@ using Zenject;
 
 namespace Homeworks.SaveLoad
 {
-    public sealed class ResourcesHandler : MonoBehaviour
+    public sealed class PlayerResourcesHandler : MonoBehaviour
     {
         [ShowInInspector, ReadOnly]
         private Dictionary<ResourceType, int> _resources = new Dictionary<ResourceType, int>();
