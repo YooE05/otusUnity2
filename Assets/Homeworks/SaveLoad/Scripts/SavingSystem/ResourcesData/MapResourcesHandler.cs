@@ -5,8 +5,7 @@ namespace Homeworks.SaveLoad
 {
     public sealed class MapResourcesHandler
     {
-        private List<ResourceObject> _objects = new List<ResourceObject>();
-
+        private readonly List<ResourceObject> _objects;
         public MapResourcesHandler(EntitiesContainer resourcesContainer)
         {
             _objects = resourcesContainer.ResourceObjects;

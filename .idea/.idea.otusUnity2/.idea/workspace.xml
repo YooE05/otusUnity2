@@ -6,17 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/EntitiesContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourcesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourcesHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsContainer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/EntitiesContainer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,9 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelBounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Pool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyMoveAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" />
@@ -91,13 +87,11 @@
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IGameRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/PlayerResources.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/ResourcesHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSavers/UnitsDataSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/UnitsContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/UnitData.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/UnitsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/UnitObject.cs" />
@@ -107,7 +101,12 @@
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +177,7 @@
       <workItem from="1730988964627" duration="378000" />
       <workItem from="1730989994666" duration="6791000" />
       <workItem from="1735891153697" duration="22494000" />
-      <workItem from="1735975476573" duration="3144000" />
+      <workItem from="1735975476573" duration="6930000" />
     </task>
     <servers />
   </component>

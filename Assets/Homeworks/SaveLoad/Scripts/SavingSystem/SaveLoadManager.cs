@@ -4,7 +4,7 @@ using Zenject;
 
 namespace Homeworks.SaveLoad
 {
-    public class SaveLoadManager : MonoBehaviour
+    public sealed class SaveLoadManager : MonoBehaviour
     {
         private IGameRepository _gameRepository;
         private DiContainer _container;
@@ -31,7 +31,7 @@ namespace Homeworks.SaveLoad
         public void LoadGame()
         {
             _gameRepository.LoadState();
-            
+
             for (int i = 0; i < _dataSavers.Count; i++)
             {
                 _dataSavers[i].LoadData(_gameRepository, _container);

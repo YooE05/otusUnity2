@@ -7,10 +7,11 @@ namespace Homeworks.SaveLoad
     {
         [SerializeField] private PlayerResourcesHandler _playerResourcesHandler;
         [SerializeField] private EntitiesContainer _entitiesContainer;
+        [SerializeField] private DataSaveConfig _saveConfig;
      
         public override void InstallBindings()
         {
-            Container.BindInterfacesTo<GameRepository>().AsSingle().NonLazy();
+            Container.BindInterfacesTo<GameRepository>().AsSingle().WithArguments(_saveConfig).NonLazy();
             
             Container.BindInterfacesTo<PlayerResourcesSaver>().AsSingle().NonLazy();
             Container.Bind<PlayerResourcesHandler>().FromInstance(_playerResourcesHandler).AsSingle().NonLazy();

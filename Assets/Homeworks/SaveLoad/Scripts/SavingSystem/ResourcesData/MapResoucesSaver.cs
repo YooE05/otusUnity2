@@ -1,6 +1,6 @@
 namespace Homeworks.SaveLoad
 {
-    public class MapResoucesSaver : DataSaver<int[], MapResourcesHandler>
+    public sealed class MapResoucesSaver : DataSaver<int[], MapResourcesHandler>
     {
         protected override int[] ExtractData(MapResourcesHandler service)
         {

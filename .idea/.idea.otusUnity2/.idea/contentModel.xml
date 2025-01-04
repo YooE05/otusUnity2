@@ -51,6 +51,7 @@
                 <e p="ResourceType.cs" t="Include" />
               </e>
               <e p="SavingSystem" t="Include">
+                <e p="DataSaveConfig.cs" t="Include" />
                 <e p="DataSaver.cs" t="Include" />
                 <e p="GameRepository.cs" t="Include" />
                 <e p="IDataSaver.cs" t="Include" />

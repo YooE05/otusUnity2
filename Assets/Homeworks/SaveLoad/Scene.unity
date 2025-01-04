@@ -202,6 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerResourcesHandler: {fileID: 2111429469}
   _entitiesContainer: {fileID: 2111429470}
+  _saveConfig: {fileID: 11400000, guid: 4a7241f6722e3c44eb069faf5450563e, type: 2}
 --- !u!1 &65469825
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,9 +423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 312
+  Damage: 4
 --- !u!1001 &156433616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -506,9 +507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1001 &192793047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -590,9 +591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1 &340940745
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,9 +800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1001 &518240168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -883,9 +884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1001 &525624323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -955,9 +956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 555
 --- !u!1 &552380983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,9 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!4 &632582635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 410302, guid: 5a12c360688f0e149892f627a4b63857,
@@ -1385,9 +1386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1001 &977900097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1457,9 +1458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 234
+  Speed: 4
+  Damage: 6
 --- !u!1001 &1069395497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1529,9 +1530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 523
+  Damage: 3
 --- !u!1 &1232540928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,9 +1748,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 4
+  Damage: 23
 --- !u!1 &1239581508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,9 +1900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 23
 --- !u!1001 &1298357891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2090,9 +2091,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 53
+  Speed: 44
+  Damage: 3
 --- !u!1 &1502192415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,9 +2259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1001 &1738537723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2781,9 +2782,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 66
+  Speed: 4
+  Damage: 3
 --- !u!1001 &1958162752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2843,9 +2844,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!4 &1958162756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 460858, guid: 020b3f4b12d25014b82b80c9c91bcb03,
@@ -3152,9 +3153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 10
+  Damage: 3
 --- !u!1001 &2110650835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3230,9 +3231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b30195530774198a17c549ed1b85bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  Speed: 0
-  Damage: 0
+  HitPoints: 5
+  Speed: 12
+  Damage: 4
 --- !u!4 &2110650839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 488580, guid: 2f7fa3b50cb2fd144a777576a449b045,
