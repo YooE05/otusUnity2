@@ -73,6 +73,12 @@
               </e>
             </e>
           </e>
+          <e p="UpgradeManager" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="ObjectSpawnArea.cs" t="Include" />
+              <e p="UpgradeStationHandler.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Plugins" t="Include">
           <e p="Sirenix" t="Include">

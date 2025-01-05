@@ -32,7 +32,7 @@ namespace Lessons.Architecture.PM
 
             _levelInfo = levelInfo;
             _levelPresenter = new PlayerLevelPresenter(_levelInfo);
-            _levelPresenter.OnLevelUp += InreaseStats;
+            _levelPresenter.OnLevelUp += IncreaseStats;
         }
 
         public HashSet<CharacterStatPresenter> StatPresenters => _statPresenters;
@@ -48,7 +48,7 @@ namespace Lessons.Architecture.PM
             }
         }
 
-        private void InreaseStats()
+        private void IncreaseStats()
         {
             _statsManager.IncreaseAllStats();
         }
@@ -56,7 +56,7 @@ namespace Lessons.Architecture.PM
         ~ProfilePresenter()
         {
             _statsManager.OnStatAdded -= CreatePresenter;
-            _levelPresenter.OnLevelUp -= InreaseStats;
+            _levelPresenter.OnLevelUp -= IncreaseStats;
         }
     }
 }

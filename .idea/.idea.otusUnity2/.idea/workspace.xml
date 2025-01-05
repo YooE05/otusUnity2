@@ -6,17 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Otus_UnityProfessional/Assets/Game/Tutorial/Content/4.UpgradeHero/Scripts/2.UpgradePopup/UpgradePopupController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/a4/60ea6694/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,9 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyAttackAgent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Agents/EnemyMoveAgent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/CharacterData.cs" />
@@ -107,6 +99,9 @@
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeStationHandler.cs" />
       </list>
     </option>
   </component>
@@ -178,6 +173,8 @@
       <workItem from="1730989994666" duration="6791000" />
       <workItem from="1735891153697" duration="22494000" />
       <workItem from="1735975476573" duration="6930000" />
+      <workItem from="1736022457784" duration="1703000" />
+      <workItem from="1736068140382" duration="6545000" />
     </task>
     <servers />
   </component>
@@ -343,9 +340,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1000" y="139" width="1920" height="1388" key="dock-window-1/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1728490421662" />
-    <state x="936" y="330" key="run.anything.popup" timestamp="1729960960752">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="562" y="194" key="run.anything.popup" timestamp="1736072758635">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="562" y="194" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1736072758635" />
     <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729960960752" />
     <state x="566" y="185" width="672" height="400" key="search.everywhere.popup" timestamp="1735919452344">
       <screen x="0" y="0" width="1536" height="824" />
@@ -359,14 +357,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSavers/UnitsDataSaver.cs</url>
           <line>6</line>
-          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Homeworks\SaveLoad\Scripts\SavingSystem\DataSavers\UnitsDataSaver.cs" initialLine="6">
-            <startOffsets>
-              <option value="200" />
-            </startOffsets>
-            <endOffsets>
-              <option value="233" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Homeworks\SaveLoad\Scripts\SavingSystem\DataSavers\UnitsDataSaver.cs" initialLine="6" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
