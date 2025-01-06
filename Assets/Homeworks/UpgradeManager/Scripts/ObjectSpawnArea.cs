@@ -7,25 +7,21 @@ namespace Homeworks.UpgradeManager
     {
         [SerializeField] private List<GameObject> _objects;
 
-        private int _totalSlots;
-        private int _takenSlots;
-        private int AvailableSlots => _totalSlots - _takenSlots;
-        public bool HasEmptySlots => AvailableSlots > 0;
-        public bool HasTakenSlots => _takenSlots > 0;
+        private int _capacity;
+        private int _takenCount;
+        private int AvailableCount => _capacity - _takenCount;
+        public bool HasEmptySlots => AvailableCount > 0;
+        public bool HasTakenSlots => _takenCount > 0;
+
+        public int Capacity => _capacity;
 
         private void Awake()
         {
-            _totalSlots = 0;
-            _takenSlots = 0;
+            _takenCount = 0;
             SetObjectsView();
         }
 
-        public void InitSpawnArea(int initTotalSlotsCount)
-        {
-            _totalSlots = initTotalSlotsCount;
-        }
-
-        public bool TryTakeSlot(int needSlotsCount, out int restSlotsCount)
+        public bool TryTake(int needSlotsCount, out int restSlotsCount)
         {
             if (!HasEmptySlots)
             {
@@ -33,8 +29,8 @@ namespace Homeworks.UpgradeManager
                 return false;
             }
 
-            var addedSlots = Mathf.Clamp(needSlotsCount, 0, AvailableSlots);
-            _takenSlots += addedSlots;
+            var addedSlots = Mathf.Clamp(needSlotsCount, 0, AvailableCount);
+            _takenCount += addedSlots;
 
             SetObjectsView();
 
@@ -42,26 +38,26 @@ namespace Homeworks.UpgradeManager
             return true;
         }
 
-        public void ReleaseSlot()
+        public void Release()
         {
-            _takenSlots = Mathf.Clamp(_takenSlots - 1, 0, _takenSlots);
+            _takenCount = Mathf.Clamp(_takenCount - 1, 0, _takenCount);
             SetObjectsView();
         }
 
-        public void ReleaseAllSlots()
+        public void ReleaseAll()
         {
-            _takenSlots = 0;
+            _takenCount = 0;
             SetObjectsView();
         }
 
-        public void SetTotalSlotsCount(int newCapacity)
+        public void SetCapacityCount(int newCapacity)
         {
-            _totalSlots = newCapacity;
+            _capacity = newCapacity;
         }
 
         private void SetObjectsView()
         {
-            var enabledObjectsCount = Mathf.Clamp(_takenSlots, 0, _objects.Count);
+            var enabledObjectsCount = Mathf.Clamp(_takenCount, 0, _objects.Count);
             for (var i = 0; i < _objects.Count; i++)
             {
                 _objects[i].SetActive(i < enabledObjectsCount);

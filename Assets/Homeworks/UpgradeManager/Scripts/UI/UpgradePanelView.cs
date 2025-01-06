@@ -17,7 +17,6 @@ namespace Homeworks.UpgradeManager
 
         public void ShowPanel(UpgradePanelPresenter presenter)
         {
-            //_closeButton.onClick.AddListener(ClosePanel);
             _closeButton.OnClickAsObservable().Subscribe(delegate { HidePanel(); }).AddTo(this);
             _upgradePanel.SetActive(true);
 
@@ -37,8 +36,6 @@ namespace Homeworks.UpgradeManager
             }
 
             _upgradeViews.Clear();
-
-            // _closeButton.onClick.RemoveAllListeners();
             _upgradePanel.SetActive(false);
         }
     }

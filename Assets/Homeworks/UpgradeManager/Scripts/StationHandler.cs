@@ -1,7 +1,6 @@
 using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,21 +10,18 @@ namespace Homeworks.UpgradeManager
     {
         public float TimeToTransform => _timeToTransform;
 
-        [SerializeField] private int _initPutAreaSlots;
-        [SerializeField] private int _initOutAreaSlots;
         [SerializeField] private ObjectSpawnArea _putArea;
         [SerializeField] private ObjectSpawnArea _outArea;
 
-        [SerializeField] private float _timeToTransform = 3f;
         [SerializeField] private Slider _slider;
-        
+
+        private float _timeToTransform;
+
         private CancellationTokenSource _cancellationTokenSource;
+
         private void Awake()
         {
-            _putArea.InitSpawnArea(_initPutAreaSlots);
-            _outArea.InitSpawnArea(_initOutAreaSlots);
             _cancellationTokenSource = new CancellationTokenSource();
-
             _slider.value = 0f;
         }
 
@@ -34,39 +30,36 @@ namespace Homeworks.UpgradeManager
             StartTransformProcess(_cancellationTokenSource.Token).Forget();
         }
 
-        [ShowInInspector]
-        public void PutResourcesToStation(int amountToPut,int allResAmount, out int restAmount)
+        public void PutResourcesToStation(int amountToPut, int allResAmount, out int restAmount)
         {
-            if (_putArea.TryTakeSlot(amountToPut, out var restResources))
+            if (_putArea.TryTake(amountToPut, out var restResources))
             {
                 restAmount = allResAmount - amountToPut + restResources;
             }
-
-            restAmount = allResAmount;
+            else
+            {
+                restAmount = allResAmount;
+            }
         }
 
-        [ShowInInspector]
         public void CollectAllResourcesFromOutArea()
         {
-            _outArea.ReleaseAllSlots();
+            _outArea.ReleaseAll();
         }
 
-        [ShowInInspector]
         public void SetTransformationSpeed(float newTime)
         {
             _timeToTransform = newTime;
         }
 
-        [ShowInInspector]
-        public void IncreasePutCapacity(int newPutCapacity)
+        public void SetPutCapacity(int newPutCapacity)
         {
-            _putArea.SetTotalSlotsCount(newPutCapacity);
+            _putArea.SetCapacityCount(newPutCapacity);
         }
 
-        [ShowInInspector]
-        public void SetTotalSlotsCount(int newOutCapacity)
+        public void SetOutCapacity(int newOutCapacity)
         {
-            _outArea.SetTotalSlotsCount(newOutCapacity);
+            _outArea.SetCapacityCount(newOutCapacity);
         }
 
         private async UniTaskVoid StartTransformProcess(CancellationToken token)
@@ -109,10 +102,20 @@ namespace Homeworks.UpgradeManager
 
         private void TransformResources()
         {
-            if (_outArea.TryTakeSlot(1, out var restResources))
+            if (_outArea.TryTake(1, out var restResources))
             {
-                _putArea.ReleaseSlot();
+                _putArea.Release();
             }
+        }
+
+        public int GetOutCapacity()
+        {
+            return _outArea.Capacity;
+        }
+
+        public int GetPutCapacity()
+        {
+            return _putArea.Capacity;
         }
     }
 }

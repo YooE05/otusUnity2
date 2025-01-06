@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using Zenject;
+﻿using Zenject;
 
 namespace Homeworks.UpgradeManager
 {
@@ -17,16 +16,21 @@ namespace Homeworks.UpgradeManager
         public void Construct(StationHandler stationHandler)
         {
             _stationHandler = stationHandler;
+            SetNewStationTime();
         }
 
         public override string GetCurrentValue()
         {
             var value = _stationHandler.TimeToTransform;
-            Debug.Log("In Upgrade " + value);
             return value.ToString();
         }
 
         protected override void OnUpgrade()
+        {
+            SetNewStationTime();
+        }
+
+        private void SetNewStationTime()
         {
             var newTime = _speedConfig.GetNewTime(Level);
             _stationHandler.SetTransformationSpeed(newTime);

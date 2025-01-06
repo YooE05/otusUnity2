@@ -1,5 +1,4 @@
-﻿using Cysharp.Threading.Tasks;
-using UniRx;
+﻿using UniRx;
 
 public sealed class MoneyStorage
 {
@@ -10,6 +9,7 @@ public sealed class MoneyStorage
     public MoneyStorage(int initAmount)
     {
         _money = initAmount;
+        Money.Value = _money;
     }
 
     public bool IsEnoughMoney(int needAmount)

@@ -9,19 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 548d36d7b9a64025b1a7ed153433f631, type: 3}
-  m_Name: StationSpeedUpgradeConfig
+  m_Script: {fileID: 11500000, guid: 8594df7f9ad54e94802c724e30f03539, type: 3}
+  m_Name: OutAreaUpgradeConfig
   m_EditorClassIdentifier: 
-  Id: StationSpeed
+  Id: OutAreaCapacity
   MaxLevel: 5
   PriceTable:
     _basePrice: 10
     _levels: 00000000140000001e0000002800000032000000
-  TimeTable:
-    _baseTimeToTransform: 5
-    _levels:
-    - 6
-    - 3
-    - 2
-    - 1.5
-    - 1.2
+  CapacityTable:
+    _baseCapacity: 10
+    _levels: 0a0000000d0000000e0000001000000011000000

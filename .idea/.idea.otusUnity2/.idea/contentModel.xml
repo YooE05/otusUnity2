@@ -82,20 +82,25 @@
               <e p="MoneyStorage.cs" t="Include" />
               <e p="ObjectSpawnArea.cs" t="Include" />
               <e p="StationHandler.cs" t="Include" />
-              <e p="StationTimeTable.cs" t="Include" />
               <e p="UI" t="Include">
                 <e p="UpgradePanelPresenter.cs" t="Include" />
                 <e p="UpgradePanelView.cs" t="Include" />
                 <e p="UpgradePresenter.cs" t="Include" />
                 <e p="UpgradeView.cs" t="Include" />
               </e>
-              <e p="UpgradeManager.cs" t="Include" />
-              <e p="UpgradePriceTable.cs" t="Include" />
               <e p="UpgradeSystem" t="Include">
+                <e p="CapacityTable.cs" t="Include" />
+                <e p="OutAreaCapacityUpgrade.cs" t="Include" />
+                <e p="OutAreaConfigUpgrade.cs" t="Include" />
+                <e p="PutAreaCapacityUpgrade.cs" t="Include" />
+                <e p="PutAreaConfigUpgrade.cs" t="Include" />
                 <e p="StationSpeedConfigUpgrade.cs" t="Include" />
                 <e p="StationSpeedUpgrade.cs" t="Include" />
+                <e p="StationTimeTable.cs" t="Include" />
                 <e p="Upgrade.cs" t="Include" />
                 <e p="UpgradeConfig.cs" t="Include" />
+                <e p="UpgradeManager.cs" t="Include" />
+                <e p="UpgradePriceTable.cs" t="Include" />
               </e>
             </e>
           </e>

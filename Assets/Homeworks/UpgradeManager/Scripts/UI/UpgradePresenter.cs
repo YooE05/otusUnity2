@@ -38,8 +38,9 @@ namespace Homeworks.UpgradeManager
 
         public void DoUpgrade()
         {
+            var moneyToSpend = _upgrade.NextPrice;
             _upgrade.LevelUp();
-            _moneyStorage.SpendMoney(_upgrade.NextPrice);
+            _moneyStorage.SpendMoney(moneyToSpend);
         }
 
         ~UpgradePresenter()

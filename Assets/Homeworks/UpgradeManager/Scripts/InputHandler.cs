@@ -1,6 +1,7 @@
-using System;
 using Homeworks.UpgradeManager;
 using Sirenix.OdinInspector;
+using TMPro;
+using UniRx;
 using UnityEngine;
 using Zenject;
 
@@ -13,11 +14,7 @@ public class InputHandler : MonoBehaviour
     private StationHandler _stationHandler;
 
     [SerializeField] private int _totalResourceValue;
-
-    private void Awake()
-    {
-        _upgradePanel.HidePanel();
-    }
+    [SerializeField] private TextMeshProUGUI _moneyView;
 
     [Inject]
     public void Construct(UpgradeManager upgradeManager, UpgradePanelView upgradePanel, MoneyStorage moneyStorage,
@@ -25,9 +22,23 @@ public class InputHandler : MonoBehaviour
     {
         _upgradeManager = upgradeManager;
         _upgradePanel = upgradePanel;
-        _moneyStorage = moneyStorage;
-
         _stationHandler = stationHandler;
+
+        _moneyStorage = moneyStorage;
+    }
+
+    private void Awake()
+    {
+        _upgradePanel.HidePanel();
+
+        _moneyStorage.Money.Subscribe(delegate { _moneyView.text = _moneyStorage.Money.Value.ToString(); })
+            .AddTo(this);
+    }
+
+    [ShowInInspector]
+    public void OpenUpgradePanel()
+    {
+        _upgradePanel.ShowPanel(new UpgradePanelPresenter(_upgradeManager.GetAllUpgrades(), _moneyStorage));
     }
 
     [ShowInInspector]
@@ -35,10 +46,10 @@ public class InputHandler : MonoBehaviour
     {
         _stationHandler.PutResourcesToStation(amount, _totalResourceValue, out _totalResourceValue);
     }
-
+    
     [ShowInInspector]
-    public void OpenUpgradePanel()
+    public void RemoveResources()
     {
-        _upgradePanel.ShowPanel(new UpgradePanelPresenter(_upgradeManager.GetAllUpgrades(), _moneyStorage));
+        _stationHandler.CollectAllResourcesFromOutArea();
     }
 }
