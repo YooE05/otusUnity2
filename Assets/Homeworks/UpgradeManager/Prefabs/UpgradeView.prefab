@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 8462668686081292985}
   - component: {fileID: 8462668686081292986}
   - component: {fileID: 8462668686081292984}
+  - component: {fileID: 953875515497653053}
   m_Layer: 5
   m_Name: UpgradeView
   m_TagString: Untagged
@@ -227,6 +228,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &953875515497653053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8462668686081292988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d588ef089af24e98ba8b2c042755a7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upgradeName: {fileID: 8462668687289390367}
+  _currentLevel: {fileID: 8462668686660470207}
+  _value: {fileID: 8462668686455319679}
+  _doUpgradeButton: {fileID: 8462668685501484819}
+  _buttonText: {fileID: 8462668686101085418}
 --- !u!1 &8462668686101085420
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +257,7 @@ GameObject:
   - component: {fileID: 8462668686101085417}
   - component: {fileID: 8462668686101085418}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
