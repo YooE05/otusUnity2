@@ -89,18 +89,20 @@
                 <e p="UpgradeView.cs" t="Include" />
               </e>
               <e p="UpgradeSystem" t="Include">
-                <e p="CapacityTable.cs" t="Include" />
                 <e p="OutAreaCapacityUpgrade.cs" t="Include" />
                 <e p="OutAreaConfigUpgrade.cs" t="Include" />
                 <e p="PutAreaCapacityUpgrade.cs" t="Include" />
                 <e p="PutAreaConfigUpgrade.cs" t="Include" />
                 <e p="StationSpeedConfigUpgrade.cs" t="Include" />
                 <e p="StationSpeedUpgrade.cs" t="Include" />
-                <e p="StationTimeTable.cs" t="Include" />
+                <e p="Tables" t="Include">
+                  <e p="CapacityTable.cs" t="Include" />
+                  <e p="StationTimeTable.cs" t="Include" />
+                  <e p="UpgradePriceTable.cs" t="Include" />
+                </e>
                 <e p="Upgrade.cs" t="Include" />
                 <e p="UpgradeConfig.cs" t="Include" />
                 <e p="UpgradeManager.cs" t="Include" />
-                <e p="UpgradePriceTable.cs" t="Include" />
               </e>
             </e>
           </e>

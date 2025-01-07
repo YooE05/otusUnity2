@@ -20,7 +20,7 @@ namespace Homeworks.UpgradeManager
         public void SetUp(UpgradePresenter presenter)
         {
             _presenter = presenter;
-            _presenter.OnMoneyChanged
+            _presenter.MoneyChangedReaction
                 .Subscribe(delegate
                 {
                     UpdateValues();

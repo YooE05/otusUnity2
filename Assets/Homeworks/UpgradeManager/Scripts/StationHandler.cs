@@ -62,6 +62,16 @@ namespace Homeworks.UpgradeManager
             _outArea.SetCapacityCount(newOutCapacity);
         }
 
+        public int GetOutCapacity()
+        {
+            return _outArea.Capacity;
+        }
+
+        public int GetPutCapacity()
+        {
+            return _putArea.Capacity;
+        }
+
         private async UniTaskVoid StartTransformProcess(CancellationToken token)
         {
             while (true)
@@ -106,16 +116,6 @@ namespace Homeworks.UpgradeManager
             {
                 _putArea.Release();
             }
-        }
-
-        public int GetOutCapacity()
-        {
-            return _outArea.Capacity;
-        }
-
-        public int GetPutCapacity()
-        {
-            return _putArea.Capacity;
         }
     }
 }

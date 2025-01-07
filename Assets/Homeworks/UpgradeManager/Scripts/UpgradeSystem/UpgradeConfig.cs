@@ -5,7 +5,7 @@ namespace Homeworks.UpgradeManager
 {
     [Serializable]
     [CreateAssetMenu(fileName = "UpgradeConfig", menuName = "Config/New Upgrade Config")]
-    public abstract class UpgradeConfig: ScriptableObject
+    public abstract class UpgradeConfig : ScriptableObject
     {
         public string Id;
         public int MaxLevel;

@@ -5,7 +5,7 @@ namespace Homeworks.UpgradeManager
 {
     [Serializable]
     [CreateAssetMenu(fileName = "StationSpeedUpgradeConfig", menuName = "Config/New Station Speed Upgrade Config")]
-    public class StationSpeedConfigUpgrade : UpgradeConfig
+    public sealed class StationSpeedConfigUpgrade : UpgradeConfig
     {
         public StationTimeTable TimeTable;
 

@@ -5,7 +5,7 @@ namespace Homeworks.UpgradeManager
     public sealed class UpgradePresenter
     {
         private readonly CompositeDisposable _disposables = new CompositeDisposable();
-        public ReactiveCommand OnMoneyChanged { get; private set; } = new ReactiveCommand();
+        public ReactiveCommand MoneyChangedReaction { get; private set; } = new ReactiveCommand();
 
         private readonly Upgrade _upgrade;
         private readonly MoneyStorage _moneyStorage;
@@ -25,7 +25,7 @@ namespace Homeworks.UpgradeManager
             _upgrade = upgrade;
             _moneyStorage = moneyStorage;
 
-            _moneyStorage.Money.Subscribe(delegate { OnMoneyChanged.Execute(); })
+            _moneyStorage.Money.Subscribe(delegate { MoneyChangedReaction.Execute(); })
                 .AddTo(_disposables);
         }
 

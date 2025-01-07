@@ -2,7 +2,7 @@
 
 namespace Homeworks.UpgradeManager
 {
-    public class StationSpeedUpgrade : Upgrade
+    public sealed class StationSpeedUpgrade : Upgrade
     {
         private StationHandler _stationHandler;
         private readonly StationSpeedConfigUpgrade _speedConfig;
