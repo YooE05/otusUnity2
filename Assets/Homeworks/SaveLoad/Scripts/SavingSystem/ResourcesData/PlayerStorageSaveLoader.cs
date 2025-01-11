@@ -2,22 +2,22 @@
 
 namespace Homeworks.SaveLoad
 {
-    public class PlayerResourcesSaver: DataSaver<Dictionary<ResourceType, int>,PlayerResources>
+    public class PlayerStorageSaveLoader : DataSaveLoader<Dictionary<ResourceType, int>, PlayerResourcesStorage>
     {
-        protected override Dictionary<ResourceType, int> ExtractData(PlayerResources service)
+        protected override Dictionary<ResourceType, int> ExtractData(PlayerResourcesStorage service)
         {
             return service.Resources;
         }
 
-        protected override void SetupData(PlayerResources service, Dictionary<ResourceType, int> data)
+        protected override void SetupData(PlayerResourcesStorage service, Dictionary<ResourceType, int> data)
         {
             foreach (var resourceData in data)
             {
-                service.SetResource(resourceData.Key,resourceData.Value);
+                service.SetResource(resourceData.Key, resourceData.Value);
             }
         }
 
-        protected override void SetupDefaultData(PlayerResources service)
+        protected override void SetupDefaultData(PlayerResourcesStorage service)
         {
             service.SetResource(ResourceType.FOOD, 10);
             service.SetResource(ResourceType.WOOD, 5);

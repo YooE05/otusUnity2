@@ -44,27 +44,37 @@
                 <e p="SaveLoadSceneInstaller.cs" t="Include" />
               </e>
               <e p="EntitiesContainer.cs" t="Include" />
+              <e p="GameEngine" t="Include">
+                <e p="Objects" t="Include">
+                  <e p="Resource.cs" t="Include" />
+                  <e p="Unit.cs" t="Include" />
+                </e>
+                <e p="Systems" t="Include">
+                  <e p="ResourceService.cs" t="Include" />
+                  <e p="UnitManager.cs" t="Include" />
+                </e>
+              </e>
               <e p="Resources" t="Include">
-                <e p="PlayerResources.cs" t="Include" />
-                <e p="PlayerResourcesHandler.cs" t="Include" />
+                <e p="PlayerResourcesStorage.cs" t="Include" />
+                <e p="PlayerStorageHandler.cs" t="Include" />
                 <e p="ResourceObject.cs" t="Include" />
                 <e p="ResourceType.cs" t="Include" />
               </e>
               <e p="SavingSystem" t="Include">
                 <e p="DataSaveConfig.cs" t="Include" />
-                <e p="DataSaver.cs" t="Include" />
+                <e p="DataSaveLoader.cs" t="Include" />
                 <e p="GameRepository.cs" t="Include" />
-                <e p="IDataSaver.cs" t="Include" />
+                <e p="IDataSaveLoader.cs" t="Include" />
                 <e p="IGameRepository.cs" t="Include" />
                 <e p="ResourcesData" t="Include">
-                  <e p="MapResoucesSaver.cs" t="Include" />
                   <e p="MapResourcesHandler.cs" t="Include" />
-                  <e p="PlayerResourcesSaver.cs" t="Include" />
+                  <e p="PlayerStorageSaveLoader.cs" t="Include" />
+                  <e p="ResoucesSaveLoader.cs" t="Include" />
                 </e>
                 <e p="SaveLoadManager.cs" t="Include" />
                 <e p="UnitsData" t="Include">
                   <e p="UnitData.cs" t="Include" />
-                  <e p="UnitsDataSaver.cs" t="Include" />
+                  <e p="UnitsDataSaveLoader.cs" t="Include" />
                 </e>
               </e>
               <e p="Units" t="Include">

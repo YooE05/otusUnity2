@@ -2,7 +2,7 @@ using Zenject;
 
 namespace Homeworks.SaveLoad
 {
-    public interface IDataSaver
+    public interface IDataSaveLoader
     {
         public void LoadData(IGameRepository gameRepository, DiContainer container);
 

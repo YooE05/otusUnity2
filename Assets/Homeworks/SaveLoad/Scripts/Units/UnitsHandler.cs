@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using UnityEngine;
 
 namespace Homeworks.SaveLoad
@@ -30,14 +30,12 @@ namespace Homeworks.SaveLoad
 
                 var component = _unitsGOs[i].GetComponent<UnitObject>();
 
-                newUnitData = new UnitData
-                {
-                    Position = _unitsGOs[i].transform.position,
-                    Rotation = _unitsGOs[i].transform.rotation,
-                    Speed = component.Speed,
-                    Damage = component.Damage,
-                    HitPoints = component.HitPoints
-                };
+                newUnitData = UnitData.CreateInstance();
+                newUnitData.Position = _unitsGOs[i].transform.position;
+                newUnitData.Rotation = _unitsGOs[i].transform.rotation;
+                newUnitData.Speed = component.Speed;
+                newUnitData.Damage = component.Damage;
+                newUnitData.HitPoints = component.HitPoints;
 
                 _unitsData.Add(newUnitData);
             }
@@ -63,16 +61,14 @@ namespace Homeworks.SaveLoad
 
         private UnitData GetDefaultData()
         {
-            var data = new UnitData
-            {
-                Position = Vector3.zero,
-                Rotation = Quaternion.identity,
-                Speed = 0,
-                Damage = 0,
-                HitPoints = 0
-            };
-            
+            var data = UnitData.CreateInstance();
+            data.Position = Vector3.zero;
+            data.Rotation = Quaternion.identity;
+            data.Speed = 0;
+            data.Damage = 0;
+            data.HitPoints = 0;
+
             return data;
         }
     }
-}
+}*/

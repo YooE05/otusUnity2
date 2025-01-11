@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 
 namespace Homeworks.SaveLoad
 {
-    public sealed class PlayerResources
+    public sealed class PlayerResourcesStorage
     {
         public Action<ResourceType, int> OnNewValueSetted;
 
@@ -17,11 +17,6 @@ namespace Homeworks.SaveLoad
         {
             _resources[resourceType] = resource;
             OnNewValueSetted?.Invoke(resourceType, resource);
-        }
-
-        public int GetResource(ResourceType resourceType)
-        {
-            return _resources[resourceType];
         }
     }
 }

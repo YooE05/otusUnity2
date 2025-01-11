@@ -8,10 +8,10 @@ namespace Homeworks.SaveLoad
     {
         private IGameRepository _gameRepository;
         private DiContainer _container;
-        private List<IDataSaver> _dataSavers;
+        private List<IDataSaveLoader> _dataSavers;
 
         [Inject]
-        private void Construct(IGameRepository gameRepository, DiContainer container, List<IDataSaver> dataSavers)
+        private void Construct(IGameRepository gameRepository, DiContainer container, List<IDataSaveLoader> dataSavers)
         {
             _gameRepository = gameRepository;
             _container = container;

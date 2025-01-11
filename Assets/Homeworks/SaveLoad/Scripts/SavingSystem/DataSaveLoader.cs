@@ -2,16 +2,16 @@
 
 namespace Homeworks.SaveLoad
 {
-    public abstract class DataSaver<TData, TService> : IDataSaver
+    public abstract class DataSaveLoader<TData, TService> : IDataSaveLoader
     {
-        void IDataSaver.SaveData(IGameRepository gameRepository, DiContainer container)
+        void IDataSaveLoader.SaveData(IGameRepository gameRepository, DiContainer container)
         {
             var service = container.Resolve<TService>();
             TData data = ExtractData(service);
             gameRepository.SetData(data);
         }
 
-        void IDataSaver.LoadData(IGameRepository gameRepository, DiContainer container)
+        void IDataSaveLoader.LoadData(IGameRepository gameRepository, DiContainer container)
         {
             var service = container.Resolve<TService>();
             
