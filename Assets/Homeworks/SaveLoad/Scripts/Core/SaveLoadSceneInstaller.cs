@@ -15,7 +15,8 @@ namespace Homeworks.SaveLoad
 
         public override void InstallBindings()
         {
-            Container.BindInterfacesTo<GameRepository>().AsSingle().WithArguments(_saveConfig).NonLazy();
+            Container.BindInterfacesTo<FileDataStreamer>().AsSingle().WithArguments(_saveConfig).NonLazy();
+            Container.BindInterfacesTo<GameRepository>().AsSingle().NonLazy();
 
             Container.BindInterfacesTo<UnitsDataSaveLoader>().AsSingle().NonLazy();
             Container.Bind<UnitManager>().FromInstance(_unitManager).AsSingle().NonLazy();

@@ -14,6 +14,8 @@ namespace Homeworks.SaveLoad
 
             for (int i = 0; i < units.Count(); i++)
             {
+                if(units[i]==null) continue;
+                
                 var data = new UnitData()
                 {
                     Position = units[i].Position,
