@@ -6,79 +6,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Homeworks" t="Include">
-          <e p="PresentationModel" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="Core" t="Include">
-                <e p="PresenterSceneInstaller.cs" t="Include" />
-              </e>
-              <e p="InputHelper.cs" t="Include" />
-              <e p="IPresenter.cs" t="Include" />
-              <e p="PlayerLevel" t="Include">
-                <e p="PlayerLevel.cs" t="Include" />
-                <e p="PlayerLevelPresenter.cs" t="Include" />
-                <e p="PlayerLevelView.cs" t="Include" />
-              </e>
-              <e p="ProfilePopup" t="Include">
-                <e p="ProfilePopUp.cs" t="Include" />
-                <e p="ProfilePresenter.cs" t="Include" />
-              </e>
-              <e p="Stats" t="Include">
-                <e p="CharacterStat.cs" t="Include" />
-                <e p="CharacterStatData.cs" t="Include" />
-                <e p="CharacterStatPresenter.cs" t="Include" />
-                <e p="CharacterStatsManager.cs" t="Include" />
-                <e p="CharacterStatView.cs" t="Include" />
-              </e>
-              <e p="UserInfo" t="Include">
-                <e p="CharacterInfoData.cs" t="Include" />
-                <e p="UserInfo.cs" t="Include" />
-                <e p="UserInfoPresenter.cs" t="Include" />
-                <e p="UserInfoView.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="SaveLoad" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="Core" t="Include">
-                <e p="SaveLoadSceneInstaller.cs" t="Include" />
-              </e>
-              <e p="GameEngine" t="Include">
-                <e p="Objects" t="Include">
-                  <e p="Resource.cs" t="Include" />
-                  <e p="ResourceObject.cs" t="Include" />
-                  <e p="Unit.cs" t="Include" />
-                </e>
-                <e p="Systems" t="Include">
-                  <e p="Player" t="Include">
-                    <e p="PlayerResourcesStorage.cs" t="Include" />
-                    <e p="PlayerStorageHandler.cs" t="Include" />
-                    <e p="ResourceType.cs" t="Include" />
-                  </e>
-                  <e p="ResourceService.cs" t="Include" />
-                  <e p="UnitManager.cs" t="Include" />
-                </e>
-              </e>
-              <e p="SavingSystem" t="Include">
-                <e p="DataSaveConfig.cs" t="Include" />
-                <e p="FileDataStreamer.cs" t="Include" />
-                <e p="GameRepository.cs" t="Include" />
-                <e p="IDataSaveLoader.cs" t="Include" />
-                <e p="IDataStreamer.cs" t="Include" />
-                <e p="IGameRepository.cs" t="Include" />
-                <e p="SaveLoaders" t="Include">
-                  <e p="DataSaveLoader.cs" t="Include" />
-                  <e p="PlayerStorageSaveLoader.cs" t="Include" />
-                  <e p="ResoucesSaveLoader.cs" t="Include" />
-                  <e p="ResourceData.cs" t="Include" />
-                  <e p="UnitData.cs" t="Include" />
-                  <e p="UnitsDataSaveLoader.cs" t="Include" />
-                </e>
-                <e p="SaveLoadManager.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="Plugins" t="Include">
           <e p="Sirenix" t="Include">
             <e p="Assemblies" t="Include">
@@ -655,54 +582,15 @@
           <e p="BillingMode.json" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Bullets" t="Include">
-            <e p="Bullet.cs" t="Include" />
-            <e p="BulletConfig.cs" t="Include" />
-            <e p="BulletSystem.cs" t="Include" />
-          </e>
-          <e p="Character" t="Include">
-            <e p="CharacterAttackController.cs" t="Include" />
-            <e p="CharacterDeathObserver.cs" t="Include" />
-            <e p="CharacterMovementController.cs" t="Include" />
-          </e>
           <e p="Common" t="Include">
             <e p="Core" t="Include">
               <e p="LevelInstaller.cs" t="Include" />
             </e>
-            <e p="PhysicsLayer.cs" t="Include" />
             <e p="Pool.cs" t="Include" />
-          </e>
-          <e p="Components" t="Include">
-            <e p="HitPointsComponent.cs" t="Include" />
-            <e p="MoveComponent.cs" t="Include" />
-            <e p="WeaponComponent.cs" t="Include" />
-          </e>
-          <e p="Enemy" t="Include">
-            <e p="Agents" t="Include">
-              <e p="EnemyAttackAgent.cs" t="Include" />
-              <e p="EnemyMoveAgent.cs" t="Include" />
-            </e>
-            <e p="EnemyManager.cs" t="Include" />
-            <e p="EnemyPool.cs" t="Include" />
-            <e p="EnemyPositions.cs" t="Include" />
           </e>
           <e p="GameManager" t="Include">
             <e p="GamecycleManager.cs" t="Include" />
             <e p="Listeners.cs" t="Include" />
-          </e>
-          <e p="Input" t="Include">
-            <e p="FireInputManager.cs" t="Include" />
-            <e p="MovementInputManager.cs" t="Include" />
-          </e>
-          <e p="Level" t="Include">
-            <e p="LevelBackground.cs" t="Include" />
-            <e p="LevelBounds.cs" t="Include" />
-          </e>
-          <e p="UI" t="Include">
-            <e p="GameStartManager.cs" t="Include" />
-            <e p="PauseResumeManager.cs" t="Include" />
-            <e p="PauseUIView.cs" t="Include" />
-            <e p="StartUIView.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

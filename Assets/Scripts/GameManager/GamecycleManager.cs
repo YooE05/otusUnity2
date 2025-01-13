@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace ShootEmUp
+namespace Homework
 {
     public enum GameState
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 using Zenject;
 using Object = UnityEngine.Object;
 
-namespace ShootEmUp
+namespace Homework
 {
     public abstract class Pool<T> : Listeners.IInitListener where T : Object
     {
