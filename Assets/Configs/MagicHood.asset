@@ -10,27 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1a50bd9f6444b989cca5a39e2444f92, type: 3}
-  m_Name: Glove3
+  m_Name: MagicHood
   m_EditorClassIdentifier: 
   Prototype:
-    Name: Magic3 Glove
+    Name: MagicHood
     Count: 1
     Metadata:
-      Icon: {fileID: 21300000, guid: d24e7e0b75e1a244bb9687d6fd4315ef, type: 3}
-      Description: Magic Glove aaaa
+      Icon: {fileID: 21300000, guid: ddf2e76e8a1f88f46ae1e42277850b48, type: 3}
+      Description: Good one
     Flags: 2
     ItemComponents:
-    - rid: 4107322768345006080
-    - rid: 4107322789909495810
+    - rid: 4107322757955452928
+    - rid: 4107322789909495811
+    - rid: 4107322801775443977
   references:
     version: 2
     RefIds:
-    - rid: 4107322768345006080
+    - rid: 4107322757955452928
       type: {class: EquipComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
       data:
-        EquipableParts: 6
+        EquipableParts: 16
         IsEquipped: 0
-    - rid: 4107322789909495810
+        EquippedCount: 0
+    - rid: 4107322789909495811
       type: {class: DamageItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
       data:
-        Damage: 3
+        Damage: 5
+    - rid: 4107322801775443977
+      type: {class: ManaItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+      data:
+        Mana: 10

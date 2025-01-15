@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Homework.Inventory
 {
     [Serializable]
-    public class Inventory
+    public sealed class Inventory
     {
         public event Action<InventoryItem> OnItemEqiped;
         public event Action<InventoryItem> OnItemUneqiped;
@@ -158,17 +158,31 @@ namespace Homework.Inventory
             if (!item.TryGetComponent<EquipComponent>(out var component)) return;
 
             var suitParts = GetEquipablePartsList(component);
-            if (component.IsEquipped && component.EquippedCount == item.Count) return;
+            if (component.IsEquipped &&
+                (component.EquippedCount == suitParts.Count || component.EquippedCount == item.Count)) return;
 
+            //ищем свободную ячейку
             for (var i = 0; i < suitParts.Count; i++)
             {
-                if (i == suitParts.Count - 1)
-                {
-                    inventory.UnequipBodyPart(suitParts[i]);
-                }
-
                 if (inventory.CheckBodyPartFree(suitParts[i]))
                 {
+                    component.IsEquipped = true;
+                    component.EquippedCount++;
+                    inventory.EquipBodyPart(suitParts[i], item);
+                    return;
+                }
+            }
+
+            //если все заняты, ищем ячейку, которая занята не текущим предметом
+            for (var i = 0; i < suitParts.Count; i++)
+            {
+                var bodyPartItem = inventory.GetBodyPartItem(suitParts[i]);
+                if (bodyPartItem.Name != item.Name)
+                {
+                    bodyPartItem.TryGetComponent<EquipComponent>(out var partComponent);
+                    partComponent.EquippedCount--;
+                    inventory.UnequipBodyPart(suitParts[i]);
+
                     component.IsEquipped = true;
                     component.EquippedCount++;
                     inventory.EquipBodyPart(suitParts[i], item);

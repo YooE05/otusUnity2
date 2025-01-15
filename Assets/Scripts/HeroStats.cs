@@ -6,8 +6,7 @@ namespace Homework.Inventory
     {
         public int Damage;
         public int Mana;
-        public int PhysicalResistance;
-        public int MagicalResistance;
+        public int Resistance;
         public int Speed;
     }
 }

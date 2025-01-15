@@ -594,16 +594,27 @@
           </e>
           <e p="HeroStats.cs" t="Include" />
           <e p="Inventory" t="Include">
-            <e p="DamageEffectObserver.cs" t="Include" />
-            <e p="DamageItemComponent.cs" t="Include" />
+            <e p="Components" t="Include">
+              <e p="DamageItemComponent.cs" t="Include" />
+              <e p="EquipComponent.cs" t="Include" />
+              <e p="IItemComponent.cs" t="Include" />
+              <e p="ManaItemComponent.cs" t="Include" />
+              <e p="ResistanceItemComponent.cs" t="Include" />
+              <e p="SpeedItemComponent.cs" t="Include" />
+            </e>
+            <e p="EffectObservers" t="Include">
+              <e p="DamageEffectObserver.cs" t="Include" />
+              <e p="IItemEffectsObserver.cs" t="Include" />
+              <e p="ItemEffectsObserver.cs" t="Include" />
+              <e p="ManaEffectObserver.cs" t="Include" />
+              <e p="ResistanceEffectObserver.cs" t="Include" />
+              <e p="SpeedEffectObserver.cs" t="Include" />
+            </e>
             <e p="EquipablePlayerParts.cs" t="Include" />
-            <e p="IItemComponent.cs" t="Include" />
-            <e p="IItemEffectsObserver.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryDebug.cs" t="Include" />
             <e p="InventoryItem.cs" t="Include" />
             <e p="InventoryItemConfig.cs" t="Include" />
-            <e p="ItemEffectsObserver.cs" t="Include" />
             <e p="ItemFlags.cs" t="Include" />
             <e p="ItemMetadata.cs" t="Include" />
           </e>
