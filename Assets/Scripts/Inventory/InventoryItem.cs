@@ -15,6 +15,20 @@ namespace Homework.Inventory
 
         [SerializeReference] public IItemComponent[] ItemComponents;
 
+        public InventoryItem()
+        {
+        }
+
+        public InventoryItem(string name, IItemComponent[] itemComponents)
+        {
+            Name = name;
+            ItemComponents = itemComponents;
+
+            Flags = ItemFlags.None;
+            Metadata = new ItemMetadata();
+            Count = 1;
+        }
+
         public InventoryItem Clone()
         {
             var components = CloneComponents();

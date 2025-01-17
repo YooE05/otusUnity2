@@ -213,7 +213,7 @@ namespace Homework.Inventory
             }
         }
 
-        private static List<EquipablePlayerParts> GetEquipablePartsList(EquipComponent resultComponent)
+        public static List<EquipablePlayerParts> GetEquipablePartsList(EquipComponent resultComponent)
         {
             var suitParts = new List<EquipablePlayerParts>();
             foreach (EquipablePlayerParts part in Enum.GetValues(typeof(EquipablePlayerParts)))
