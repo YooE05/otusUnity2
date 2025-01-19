@@ -4,7 +4,8 @@
     {
         private readonly HeroStats _hero;
 
-        public ManaEffectObserver(Inventory inventory, HeroStats hero) : base(inventory)
+        public ManaEffectObserver(Inventory inventory, EquipmentSystem equipmentsSystem, HeroStats hero) : base(
+            inventory, equipmentsSystem)
         {
             _hero = hero;
         }

@@ -6,12 +6,14 @@ namespace Homework.Inventory
 {
     public class InventoryDebug : MonoBehaviour
     {
+        [ShowInInspector] private EquipmentSystem _equipmentSystem;
         [ShowInInspector] private Inventory _inventory;
 
         [Inject]
-        public void Construct(Inventory inventory)
+        public void Construct(Inventory inventory, EquipmentSystem equipmentSystem)
         {
             _inventory = inventory;
+            _equipmentSystem = equipmentSystem;
         }
 
         [ShowInInspector]
@@ -29,13 +31,13 @@ namespace Homework.Inventory
         [ShowInInspector]
         public void EquipItem(InventoryItemConfig itemConfig)
         {
-            _inventory.TryEquipItem(itemConfig.GetClone());
+            _equipmentSystem.TryEquipItem(itemConfig.GetClone());
         }
 
         [ShowInInspector]
         public void UnequipItem(InventoryItemConfig itemConfig)
         {
-            _inventory.TryUnequipItem(itemConfig.GetClone());
+            _equipmentSystem.TryUnequipItem(itemConfig.GetClone());
         }
     }
 }

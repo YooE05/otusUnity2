@@ -20,18 +20,17 @@ MonoBehaviour:
       Description: Shield
     Flags: 2
     ItemComponents:
-    - rid: 4107322768345006080
-    - rid: 4107322801775443978
+    - rid: 4107322882362703881
+    - rid: 4107322882362703886
   references:
     version: 2
     RefIds:
-    - rid: 4107322768345006080
-      type: {class: EquipComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703881
+      type: {class: EquipComponent, ns: Homework.Inventory, asm: Scripts}
       data:
         EquipableParts: 6
-        IsEquipped: 0
         EquippedCount: 0
-    - rid: 4107322801775443978
-      type: {class: ResistanceItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703886
+      type: {class: ResistanceItemComponent, ns: Homework.Inventory, asm: Scripts}
       data:
-        Resistance: 15
+        Resistance: 10

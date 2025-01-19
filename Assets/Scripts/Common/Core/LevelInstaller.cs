@@ -10,6 +10,7 @@ namespace Homework.Inventory
         public override void InstallBindings()
         {
             Container.Bind<Inventory>().AsSingle().NonLazy();
+            Container.Bind<EquipmentSystem>().AsSingle().NonLazy();
             Container.Bind<HeroStats>().FromInstance(_hero).AsSingle().NonLazy();
 
             BindObservers();

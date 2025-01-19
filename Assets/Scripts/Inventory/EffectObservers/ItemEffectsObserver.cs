@@ -4,15 +4,17 @@
         where TEffectComponent : IItemComponent
     {
         private readonly Inventory _inventory;
+        private readonly EquipmentSystem _equipmentsSystem;
 
-        protected ItemEffectsObserver(Inventory inventory)
+        protected ItemEffectsObserver(Inventory inventory, EquipmentSystem equipmentsSystem)
         {
             _inventory = inventory;
-
-            _inventory.OnItemEqiped += ApplyItemEffect;
-            _inventory.OnItemUneqiped += RemoveItemEffect;
+            _equipmentsSystem = equipmentsSystem;
 
             _inventory.OnItemConsumed += ApplyItemEffect;
+
+            _equipmentsSystem.OnItemEqiped += ApplyItemEffect;
+            _equipmentsSystem.OnItemUneqiped += RemoveItemEffect;
         }
 
         public void ApplyItemEffect(InventoryItem item)
@@ -36,8 +38,8 @@
 
         ~ItemEffectsObserver()
         {
-            _inventory.OnItemEqiped -= ApplyItemEffect;
-            _inventory.OnItemUneqiped -= RemoveItemEffect;
+            _equipmentsSystem.OnItemEqiped -= ApplyItemEffect;
+            _equipmentsSystem.OnItemUneqiped -= RemoveItemEffect;
 
             _inventory.OnItemConsumed -= ApplyItemEffect;
         }

@@ -20,23 +20,22 @@ MonoBehaviour:
       Description: Good one
     Flags: 2
     ItemComponents:
-    - rid: 4107322757955452928
-    - rid: 4107322789909495811
-    - rid: 4107322801775443977
+    - rid: 4107322882362703879
+    - rid: 4107322882362703884
+    - rid: 4107322882362703890
   references:
     version: 2
     RefIds:
-    - rid: 4107322757955452928
-      type: {class: EquipComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703879
+      type: {class: EquipComponent, ns: Homework.Inventory, asm: Scripts}
       data:
         EquipableParts: 16
-        IsEquipped: 0
         EquippedCount: 0
-    - rid: 4107322789909495811
-      type: {class: DamageItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703884
+      type: {class: ManaItemComponent, ns: Homework.Inventory, asm: Scripts}
       data:
-        Damage: 5
-    - rid: 4107322801775443977
-      type: {class: ManaItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+        Mana: 6
+    - rid: 4107322882362703890
+      type: {class: DamageItemComponent, ns: Homework.Inventory, asm: Scripts}
       data:
-        Mana: 10
+        Damage: 7

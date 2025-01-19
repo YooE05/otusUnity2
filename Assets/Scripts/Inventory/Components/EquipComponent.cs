@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Homework.Inventory
 {
@@ -6,8 +7,7 @@ namespace Homework.Inventory
     public class EquipComponent : IItemComponent
     {
         public EquipablePlayerParts EquipableParts;
-        public bool IsEquipped;
-        public int EquippedCount;
+        [HideInInspector] public int EquippedCount;
 
         public IItemComponent Clone()
         {
@@ -15,7 +15,6 @@ namespace Homework.Inventory
             {
                 EquipableParts = EquipableParts,
                 EquippedCount = 0,
-                IsEquipped = IsEquipped,
             };
         }
     }

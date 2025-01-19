@@ -20,23 +20,22 @@ MonoBehaviour:
       Description: Good one
     Flags: 2
     ItemComponents:
-    - rid: 4107322757955452928
-    - rid: 4107322801775443971
-    - rid: 4107322801775443972
+    - rid: 4107322882362703874
+    - rid: 4107322882362703875
+    - rid: 4107322882362703876
   references:
     version: 2
     RefIds:
-    - rid: 4107322757955452928
-      type: {class: EquipComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703874
+      type: {class: EquipComponent, ns: Homework.Inventory, asm: Scripts}
       data:
         EquipableParts: 8
-        IsEquipped: 0
         EquippedCount: 0
-    - rid: 4107322801775443971
-      type: {class: SpeedItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703875
+      type: {class: SpeedItemComponent, ns: Homework.Inventory, asm: Scripts}
       data:
         Speed: -5
-    - rid: 4107322801775443972
-      type: {class: ResistanceItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703876
+      type: {class: ResistanceItemComponent, ns: Homework.Inventory, asm: Scripts}
       data:
-        Resistance: 3
+        Resistance: 5

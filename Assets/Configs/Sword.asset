@@ -20,18 +20,17 @@ MonoBehaviour:
       Description: Good one
     Flags: 2
     ItemComponents:
-    - rid: 4107322757955452928
-    - rid: 4107322789909495811
+    - rid: 4107322882362703882
+    - rid: 4107322882362703891
   references:
     version: 2
     RefIds:
-    - rid: 4107322757955452928
-      type: {class: EquipComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703882
+      type: {class: EquipComponent, ns: Homework.Inventory, asm: Scripts}
       data:
         EquipableParts: 6
-        IsEquipped: 0
         EquippedCount: 0
-    - rid: 4107322789909495811
-      type: {class: DamageItemComponent, ns: Homework.Inventory, asm: Assembly-CSharp}
+    - rid: 4107322882362703891
+      type: {class: DamageItemComponent, ns: Homework.Inventory, asm: Scripts}
       data:
-        Damage: 10
+        Damage: 52

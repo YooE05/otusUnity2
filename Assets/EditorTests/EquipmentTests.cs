@@ -5,6 +5,7 @@ using UnityEngine;
 public sealed class EquipmentTests
 {
     private Inventory _inventory;
+    private EquipmentSystem _equipmentSystem;
     private InventoryItemConfig _glove;
     private InventoryItemConfig _sword;
     private InventoryItemConfig _helmet;
@@ -14,6 +15,7 @@ public sealed class EquipmentTests
     public void Setup()
     {
         _inventory = new Inventory();
+        _equipmentSystem = new EquipmentSystem(_inventory);
 
         _glove = EquipTestHelper.CreateItemConfig("glove",
             EquipablePlayerParts.RightHand | EquipablePlayerParts.LeftHand);
@@ -30,15 +32,15 @@ public sealed class EquipmentTests
     {
         //Arrange
         _inventory.TryAddItem(_helmet.GetClone());
-        _inventory.TryEquipItem(_helmet.GetClone());
+        _equipmentSystem.TryEquipItem(_helmet.GetClone());
 
         _inventory.TryAddItem(_hood.GetClone());
 
         //Act
-        _inventory.TryEquipItem(_hood.GetClone());
+        _equipmentSystem.TryEquipItem(_hood.GetClone());
 
         //Assert
-        Assert.True(_inventory.GetBodyPartItem(EquipablePlayerParts.Head).Name == _hood.GetClone().Name);
+        Assert.True(_equipmentSystem.GetBodyPartItem(EquipablePlayerParts.Head).Name == _hood.GetClone().Name);
     }
 
     [Test]
@@ -48,10 +50,10 @@ public sealed class EquipmentTests
         _inventory.TryAddItem(_glove.GetClone());
 
         //Act
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Assert
-        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 1);
+        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 1);
         Assert.True(result);
     }
 
@@ -60,13 +62,13 @@ public sealed class EquipmentTests
     {
         //Arrange
         _inventory.TryAddItem(_glove.GetClone());
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Act
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Assert
-        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 1);
+        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 1);
         Assert.True(result);
     }
 
@@ -78,13 +80,13 @@ public sealed class EquipmentTests
         _inventory.TryAddItem(_glove.GetClone());
         _inventory.TryAddItem(_glove.GetClone());
 
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Act
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Assert
-        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 2);
+        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 2);
         Assert.True(result);
     }
 
@@ -97,14 +99,14 @@ public sealed class EquipmentTests
         _inventory.TryAddItem(_glove.GetClone());
         _inventory.TryAddItem(_sword.GetClone());
 
-        _inventory.TryEquipItem(_glove.GetClone());
-        _inventory.TryEquipItem(_sword.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_sword.GetClone());
 
         //Act
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Assert
-        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 2);
+        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 2);
         Assert.True(result);
     }
 
@@ -117,14 +119,14 @@ public sealed class EquipmentTests
         _inventory.TryAddItem(_glove.GetClone());
         _inventory.TryAddItem(_glove.GetClone());
 
-        _inventory.TryEquipItem(_glove.GetClone());
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Act
         _inventory.TryRemoveItem(_glove.GetClone());
 
         //Assert
-        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 2);
+        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 2);
         Assert.True(result);
     }
 
@@ -135,14 +137,14 @@ public sealed class EquipmentTests
         _inventory.TryAddItem(_glove.GetClone());
         _inventory.TryAddItem(_glove.GetClone());
 
-        _inventory.TryEquipItem(_glove.GetClone());
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Act
         _inventory.TryRemoveItem(_glove.GetClone());
 
         //Assert
-        var isNedCountEquipped = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 1);
+        var isNedCountEquipped = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 1);
         var result = isNedCountEquipped && EquipTestHelper.HasNeededCountOfItems(_inventory, _glove, 1);
         Assert.True(result);
     }
@@ -153,13 +155,13 @@ public sealed class EquipmentTests
     {
         //Arrange
         _inventory.TryAddItem(_glove.GetClone());
-        _inventory.TryEquipItem(_glove.GetClone());
+        _equipmentSystem.TryEquipItem(_glove.GetClone());
 
         //Act
-        _inventory.TryUnequipItem(_glove.GetClone());
+        _equipmentSystem.TryUnequipItem(_glove.GetClone());
 
         //Assert
-        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _glove, 0);
+        var result = EquipTestHelper.ItemEquippedInNeedCount(_inventory, _equipmentSystem, _glove, 0);
         Assert.True(result);
     }
 }
@@ -177,23 +179,25 @@ public static class EquipTestHelper
         return itemConfig;
     }
 
-    public static bool HasNeededCountOfItems(Inventory inventory, InventoryItemConfig itemConfig, int neededCount)
+    public static bool HasNeededCountOfItems(Inventory inventory, InventoryItemConfig itemConfig,
+        int neededCount)
     {
         var result = inventory.FindItem(itemConfig.GetClone()).Count == neededCount;
         return result;
     }
 
-    public static bool ItemEquippedInNeedCount(Inventory inventory, InventoryItemConfig itemConfig, int count)
+    public static bool ItemEquippedInNeedCount(Inventory inventory, EquipmentSystem equipmentSystem,
+        InventoryItemConfig itemConfig, int count)
     {
         var equipablePartsList =
-            InventoryUseCases.GetEquipablePartsList(itemConfig.Prototype.GetComponent<EquipComponent>());
+            EquipSystemUseCases.GetEquipablePartsList(itemConfig.Prototype.GetComponent<EquipComponent>());
 
         var needAmountOfEquippedItem =
             equipablePartsList.FindAll(part =>
             {
-                if (inventory.GetBodyPartItem(part) != null)
+                if (equipmentSystem.GetBodyPartItem(part) != null)
                 {
-                    return inventory.GetBodyPartItem(part).Name == itemConfig.Prototype.Name;
+                    return equipmentSystem.GetBodyPartItem(part).Name == itemConfig.Prototype.Name;
                 }
 
                 return false;

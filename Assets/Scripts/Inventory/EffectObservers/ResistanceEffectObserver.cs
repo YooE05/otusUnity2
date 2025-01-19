@@ -4,7 +4,8 @@
     {
         private readonly HeroStats _hero;
 
-        public ResistanceEffectObserver(Inventory inventory, HeroStats hero) : base(inventory)
+        public ResistanceEffectObserver(Inventory inventory, EquipmentSystem equipmentsSystem, HeroStats hero) : base(
+            inventory, equipmentsSystem)
         {
             _hero = hero;
         }
