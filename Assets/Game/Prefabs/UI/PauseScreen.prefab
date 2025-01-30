@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1293af8a53f7428387da09a33b0fb71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resumeButton: {fileID: 7270160009298833028}
-  exitButton: {fileID: 6450588738380202279}
+  _resumeButton: {fileID: 7270160009298833028}
+  _exitButton: {fileID: 6450588738380202279}
 --- !u!1 &3747154024438526312
 GameObject:
   m_ObjectHideFlags: 0

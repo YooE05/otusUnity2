@@ -6,6 +6,7 @@ namespace SampleGame
     {
         public void ExitApp()
         {
+
 #if UNITY_EDITOR
             EditorApplication.isPlaying = false;
 #else

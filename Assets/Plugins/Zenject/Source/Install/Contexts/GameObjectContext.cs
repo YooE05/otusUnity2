@@ -41,8 +41,7 @@ namespace Zenject
         }
 
         [Inject]
-        public void Construct(
-            DiContainer parentContainer)
+        public void Construct(DiContainer parentContainer)
         {
             Assert.IsNull(_parentContainer);
             _parentContainer = parentContainer;

@@ -26,7 +26,7 @@ namespace SampleGame
                 .AsSingle();
 
             this.Container
-                .BindInterfacesTo<MoveController>()
+                .BindInterfacesAndSelfTo<MoveController>()
                 .AsCached()
                 .NonLazy();
             

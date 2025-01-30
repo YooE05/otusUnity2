@@ -1,24 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace SampleGame
 {
     public sealed class PauseButton : MonoBehaviour
     {
-        [SerializeField]
-        private Button button;
-        
-        [SerializeField]
-        private PauseScreen pauseScreen;
+        [SerializeField] private Button _button;
+
+        private PauseScreen _pauseScreen;
+
+        public void SetPauseScreen(PauseScreen pauseScreen)
+        {
+            _pauseScreen = pauseScreen;
+        }
 
         private void OnEnable()
         {
-            this.button.onClick.AddListener(this.pauseScreen.Show);
+            _button.onClick.AddListener(_pauseScreen.Show);
         }
 
         private void OnDisable()
         {
-            this.button.onClick.RemoveListener(this.pauseScreen.Show);
+            _button.onClick.RemoveListener(_pauseScreen.Show);
         }
     }
 }
