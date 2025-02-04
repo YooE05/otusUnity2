@@ -5,15 +5,15 @@ namespace SampleGame
 {
     public sealed class MoveController : IFixedTickable
     {
-        private readonly ICharacter character;
-        private readonly IMoveInput moveInput;
+        private readonly ICharacter _character;
+        private readonly IMoveInput _moveInput;
 
         private bool _canMove;
 
         public MoveController(ICharacter character, IMoveInput moveInput)
         {
-            this.character = character;
-            this.moveInput = moveInput;
+            _character = character;
+            _moveInput = moveInput;
             _canMove = true;
         }
 
@@ -24,9 +24,9 @@ namespace SampleGame
 
         void IFixedTickable.FixedTick()
         {
-            if(!_canMove) return;
-            
-            this.character.Move(this.moveInput.GetDirection(), Time.deltaTime);
+            if (!_canMove) return;
+
+            _character.Move(_moveInput.GetDirection(), Time.deltaTime);
         }
     }
 }

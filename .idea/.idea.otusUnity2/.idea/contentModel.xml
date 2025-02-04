@@ -74,6 +74,7 @@
               <e p="GameLoader.cs" t="Include" />
               <e p="Installers" t="Include">
                 <e p="ProjectInstaller.cs" t="Include" />
+                <e p="UiAssetsContainer.cs" t="Include" />
               </e>
               <e p="LocationLoader.cs" t="Include" />
               <e p="MenuLoader.cs" t="Include" />

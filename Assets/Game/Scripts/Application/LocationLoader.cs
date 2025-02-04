@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using Zenject;
 
 namespace SampleGame
@@ -10,36 +11,31 @@ namespace SampleGame
         [SerializeField] private Transform _locationParent;
         [SerializeField] private TriggerZone[] _triggerZones;
 
-        private readonly List<GameObject> _loadedLocations = new List<GameObject>();
+        private readonly List<AsyncOperationHandle> _loadedLocations = new List<AsyncOperationHandle>();
         private MoveController _moveController;
         private MenuLoader _menuLoader;
 
         [Inject]
         public void Construct(MoveController moveController, MenuLoader menuLoader)
         {
-            _menuLoader = menuLoader;
-            _menuLoader.OnBackToMenu += UnloadLocations;
-
             _moveController = moveController;
-            for (int i = 0; i < _triggerZones.Length; i++)
+            for (var i = 0; i < _triggerZones.Length; i++)
             {
                 _triggerZones[i].OnPlayerEnter += LoadLocation;
             }
+
+            _menuLoader = menuLoader;
+            _menuLoader.OnBackToMenu += UnloadLocations;
         }
 
         private async void LoadLocation(AssetReference assetReference)
         {
-            //остановить ввод игрока
             _moveController.SetMoveAbility(false);
 
-            //загрузить ассет
-            var locationPrefab = await AddressablesHandler.LoadAsset<GameObject>(assetReference);
-            var locationGO = Instantiate(locationPrefab, _locationParent);
+            var locationPrefabHandle = await AddressablesHandler.LoadAssetHandle<GameObject>(assetReference);
+            _loadedLocations.Add(locationPrefabHandle);
+            Instantiate((GameObject) locationPrefabHandle.Result, _locationParent);
 
-            //захешировать объект
-            _loadedLocations.Add(locationPrefab);
-
-            //восстановить ввод игрока
             _moveController.SetMoveAbility(true);
         }
 
@@ -47,14 +43,14 @@ namespace SampleGame
         {
             _menuLoader.OnBackToMenu -= UnloadLocations;
 
-            for (int i = 0; i < _triggerZones.Length; i++)
+            for (var i = 0; i < _triggerZones.Length; i++)
             {
                 _triggerZones[i].OnPlayerEnter -= LoadLocation;
             }
 
-            for (int i = 0; i < _loadedLocations.Count; i++)
+            for (var i = _loadedLocations.Count - 1; i >= 0; i--)
             {
-                AddressablesHandler.UnloadAsset(_loadedLocations[i]);
+                AddressablesHandler.UnloadAssetHandler(_loadedLocations[i]);
             }
         }
     }
