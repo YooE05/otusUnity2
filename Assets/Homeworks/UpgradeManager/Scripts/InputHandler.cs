@@ -49,6 +49,12 @@ namespace Homeworks.UpgradeManager
         }
 
         [ShowInInspector]
+        public void PutOneResource()
+        {
+            _stationHandler.PutResourcesToStation(1, _totalResourceValue, out _totalResourceValue);
+        }
+
+        [ShowInInspector]
         public void RemoveResources()
         {
             _stationHandler.CollectAllResourcesFromOutArea();
