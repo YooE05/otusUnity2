@@ -7,7 +7,7 @@ namespace Homeworks.UpgradeManager
     {
         [SerializeField] private List<GameObject> _objects;
 
-        private int _capacity;
+        private int _capacity = 2;
         private int _takenCount;
         private int AvailableCount => _capacity - _takenCount;
         public bool HasEmptySlots => AvailableCount > 0;

@@ -8,6 +8,8 @@ namespace Homeworks.UpgradeManager
 {
     public sealed class StationHandler : MonoBehaviour
     {
+        public event Action OnResourceTransformed;
+        public event Action OnNewTransformSpeedSet;
         public float TimeToTransform => _timeToTransform;
 
         [SerializeField] private ObjectSpawnArea _putArea;
@@ -50,6 +52,7 @@ namespace Homeworks.UpgradeManager
         public void SetTransformationSpeed(float newTime)
         {
             _timeToTransform = newTime;
+            OnNewTransformSpeedSet?.Invoke();
         }
 
         public void SetPutCapacity(int newPutCapacity)
@@ -94,7 +97,7 @@ namespace Homeworks.UpgradeManager
             {
                 if (token.IsCancellationRequested) break;
 
-                Debug.Log($"Transformation end in: {Math.Round(countdown, 2)} seconds");
+                //Debug.Log($"Transformation end in: {Math.Round(countdown, 2)} seconds");
                 countdown -= 0.1f;
                 _slider.value = Mathf.Lerp(0f, 1f, (startCountdown - countdown) / startCountdown);
                 await UniTask.Delay(TimeSpan.FromSeconds(0.1f), cancellationToken: token);
@@ -115,6 +118,7 @@ namespace Homeworks.UpgradeManager
             if (_outArea.TryTake(1, out var restResources))
             {
                 _putArea.Release();
+                OnResourceTransformed?.Invoke();
             }
         }
     }

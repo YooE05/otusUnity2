@@ -9,6 +9,7 @@
         <e p="Homeworks" t="Include">
           <e p="UpgradeManager" t="Include">
             <e p="Core" t="Include">
+              <e p="TutorialInstaller.cs" t="Include" />
               <e p="UpgradesDZInstaller.cs" t="Include" />
             </e>
             <e p="Scripts" t="Include">
@@ -16,6 +17,17 @@
               <e p="MoneyStorage.cs" t="Include" />
               <e p="ObjectSpawnArea.cs" t="Include" />
               <e p="StationHandler.cs" t="Include" />
+              <e p="TutorialSystem" t="Include">
+                <e p="AddResourceStepController.cs" t="Include" />
+                <e p="ButtonsViewController.cs" t="Include" />
+                <e p="RemoveResourceStepController.cs" t="Include" />
+                <e p="TutorialInitializer.cs" t="Include" />
+                <e p="TutorialState.cs" t="Include" />
+                <e p="TutorialStep.cs" t="Include" />
+                <e p="TutorialStepController.cs" t="Include" />
+                <e p="TutorialTextPanelController.cs" t="Include" />
+                <e p="UpgradeStepController.cs" t="Include" />
+              </e>
               <e p="UI" t="Include">
                 <e p="UpgradePanelPresenter.cs" t="Include" />
                 <e p="UpgradePanelView.cs" t="Include" />
