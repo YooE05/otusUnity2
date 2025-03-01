@@ -270,5 +270,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e802b0685f96424eb4c25a93c83a1999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 6015339804577870415}
-  pauseScreen: {fileID: 0}
+  _button: {fileID: 6015339804577870415}

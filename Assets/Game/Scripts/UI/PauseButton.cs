@@ -14,14 +14,18 @@ namespace SampleGame
             _pauseScreen = pauseScreen;
         }
 
-        private void OnEnable()
+        public void SetVisibility(bool isOn)
         {
-            _button.onClick.AddListener(_pauseScreen.Show);
-        }
+            gameObject.SetActive(isOn);
 
-        private void OnDisable()
-        {
-            _button.onClick.RemoveListener(_pauseScreen.Show);
+            if (isOn)
+            {
+                _button.onClick.AddListener(_pauseScreen.Show);
+            }
+            else
+            {
+                _button.onClick.RemoveAllListeners();
+            }
         }
     }
 }

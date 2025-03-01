@@ -9,8 +9,8 @@ namespace SampleGame
 {
     public sealed class UiAssetsContainer
     {
-        public readonly BoolReactiveProperty AllAssetsLoaded = new BoolReactiveProperty();
-        private readonly Dictionary<string, GameObject> _assetDictionary = new Dictionary<string, GameObject>();
+        public readonly BoolReactiveProperty AllAssetsLoaded = new();
+        private readonly Dictionary<string, GameObject> _assetDictionary = new();
 
         public UiAssetsContainer(AssetReference[] assets)
         {
@@ -22,7 +22,9 @@ namespace SampleGame
             AllAssetsLoaded.Value = false;
             for (var i = 0; i < assets.Count(); i++)
             {
-                var uiScreen = await AddressablesHandler.LoadAsset<GameObject>(assets[i]);
+                // var uiScreen = await AddressablesHandler.LoadAsset<GameObject>(assets[i]);
+
+                var uiScreen = await assets[i].LoadAssetAsync<GameObject>();
                 _assetDictionary.Add(assets[i].AssetGUID, uiScreen);
             }
 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -11,7 +12,7 @@ namespace SampleGame
         [SerializeField] private Transform _locationParent;
         [SerializeField] private TriggerZone[] _triggerZones;
 
-        private readonly List<AsyncOperationHandle> _loadedLocations = new List<AsyncOperationHandle>();
+        private readonly List<AsyncOperationHandle> _loadedLocations = new();
         private MoveController _moveController;
         private MenuLoader _menuLoader;
 
@@ -28,13 +29,20 @@ namespace SampleGame
             _menuLoader.OnBackToMenu += UnloadLocations;
         }
 
-        private async void LoadLocation(AssetReference assetReference)
+        private void LoadLocation(AssetReference assetReference)
+        {
+            LoadLocationAsync(assetReference).Forget();
+        }
+
+        private async UniTaskVoid LoadLocationAsync(AssetReference assetReference)
         {
             _moveController.SetMoveAbility(false);
 
-            var locationPrefabHandle = await AddressablesHandler.LoadAssetHandle<GameObject>(assetReference);
+            var locationPrefabHandle = assetReference.LoadAssetAsync<GameObject>();
+            await locationPrefabHandle;
+
             _loadedLocations.Add(locationPrefabHandle);
-            Instantiate((GameObject) locationPrefabHandle.Result, _locationParent);
+            Instantiate(locationPrefabHandle.Result, _locationParent);
 
             _moveController.SetMoveAbility(true);
         }
@@ -48,9 +56,9 @@ namespace SampleGame
                 _triggerZones[i].OnPlayerEnter -= LoadLocation;
             }
 
-            for (var i = _loadedLocations.Count - 1; i >= 0; i--)
+            for (var i = 0; i < _loadedLocations.Count; i++)
             {
-                AddressablesHandler.UnloadAssetHandler(_loadedLocations[i]);
+                Addressables.Release(_loadedLocations[i]);
             }
         }
     }

@@ -8,6 +8,6 @@ namespace SampleGame
     )]
     public sealed class CameraConfig : ScriptableObject
     {
-        [SerializeField] public Vector3 cameraOffset = new Vector3(0, 7, -10);
+        [SerializeField] public Vector3 _cameraOffset = new Vector3(0, 7, -10);
     }
 }

@@ -1,20 +1,49 @@
-using Cysharp.Threading.Tasks;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
+using UnityEngine.SceneManagement;
 
 namespace SampleGame
 {
     public sealed class GameLoader
     {
-        private SceneInstance _gameScene;
+        private readonly MenuLoader _menuLoader;
+        private const string SceneKey = "GameScene";
 
-        public async UniTask UnloadGame()
+        private AsyncOperationHandle<SceneInstance> _sceneHandle;
+
+        public GameLoader(MenuLoader menuLoader)
         {
-            await AddressablesHandler.UnloadScene(_gameScene);
+            _menuLoader = menuLoader;
+            _menuLoader.OnBackToMenu += UnloadGame;
         }
 
-        public async void LoadGame()
+        private void UnloadGame()
         {
-            _gameScene = await AddressablesHandler.LoadScene("GameScene");
+            if (!_sceneHandle.Result.Scene.isLoaded)
+            {
+                return;
+            }
+
+            Addressables.UnloadSceneAsync(_sceneHandle, UnloadSceneOptions.None);
+        }
+
+        public void LoadGame()
+        {
+            InitSceneAsset();
+        }
+
+        private void InitSceneAsset()
+        {
+            if (_sceneHandle.IsValid() && _sceneHandle.IsDone)
+            {
+                return;
+            }
+
+            var activateOnLoad = false;
+
+            _sceneHandle = Addressables.LoadSceneAsync(SceneKey, LoadSceneMode.Single, activateOnLoad);
+            _sceneHandle.Completed += delegate { _sceneHandle.Result.ActivateAsync(); };
         }
     }
 }

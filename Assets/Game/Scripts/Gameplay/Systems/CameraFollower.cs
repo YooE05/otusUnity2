@@ -5,21 +5,21 @@ namespace SampleGame
 {
     public sealed class CameraFollower : ILateTickable
     {
-        private readonly ICharacter character;
-        private readonly Camera camera;
-        private readonly Vector3 cameraOffset;
+        private readonly ICharacter _character;
+        private readonly Camera _camera;
+        private readonly Vector3 _cameraOffset;
 
         public CameraFollower(ICharacter character, Camera camera, Vector3 cameraOffset)
         {
-            this.character = character;
-            this.camera = camera;
-            this.cameraOffset = cameraOffset;
+            _character = character;
+            _camera = camera;
+            _cameraOffset = cameraOffset;
         }
 
         void ILateTickable.LateTick()
         {
-            var cameraPosition = this.character.GetPosition() + this.cameraOffset;
-            this.camera.transform.position = cameraPosition;
+            var cameraPosition = _character.GetPosition() + _cameraOffset;
+            _camera.transform.position = cameraPosition;
         }
     }
 }

@@ -4,18 +4,19 @@ using UnityEngine.AddressableAssets;
 
 namespace SampleGame
 {
-    public class TriggerZone : MonoBehaviour
+    public sealed class TriggerZone : MonoBehaviour
     {
         public event Action<AssetReference> OnPlayerEnter;
 
         [SerializeField] private AssetReference _nextLocation;
+        [SerializeField] private Collider _collider;
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.GetComponent<Character>())
+            if (other.TryGetComponent<Character>(out var character))
             {
                 OnPlayerEnter?.Invoke(_nextLocation);
-                GetComponent<Collider>().enabled = false;
+                _collider.enabled = false;
             }
         }
     }

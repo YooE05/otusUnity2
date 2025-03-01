@@ -12,7 +12,7 @@ namespace SampleGame
         {
             OnBackToMenu?.Invoke();
             Time.timeScale = 1;
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
         }
     }
 }

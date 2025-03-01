@@ -1,59 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/Installers/UiAssetsContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/Installers/UiAssetsContainer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/UIAssetLoadObserver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/UIAssetLoadObserver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/ViewInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/ViewInitializer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/AddressablesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/AddressablesHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/Installers/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/Installers/ProjectInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/Settings/Simulator Provider Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/UI/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/UI/Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/UI/MenuScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/UI/MenuScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/UI/PauseScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/UI/PauseScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Boot.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Boot.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/AddressablesHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/AddressablesHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/BootStrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/BootStrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/GameLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/GameLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/LocationLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/LocationLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/MenuLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/MenuLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/MoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/MoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Application/UiAssetsContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Application/UiAssetsContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Installers/GameInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Objects/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Objects/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Objects/TriggerZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Objects/TriggerZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/CameraConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/CameraConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/CameraFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/MoveInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Systems/MoveInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/UI/GameViewInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/GameViewInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/UI/MenuScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/MenuScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/UI/MenuViewInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/MenuViewInitializer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/UI/PauseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/PauseButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;YooE05&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YooE05/otusUnity2.git&quot;,
+    &quot;accountId&quot;: &quot;af795b52-486e-4bc2-b5a2-820e9351c1c3&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/bc/4738778a/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF7E2EFC-13D1-4514-9706-E914B39EA034/93/d288dc2b/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/UI/MenuViewInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Objects/TriggerZone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lesson_9/Assets/Code/Currency/Money/MoneyStorage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Gameplay/Objects/TriggerZone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/UI/MenuViewInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/AssetReference.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/e0/9fe1dc6e/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/30/c18ccb13/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/Util/DelegateList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/ResourceProviders/ISceneProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/Util/DelayedActionManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Application/BootStrap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/d1/eea616ae/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/14/d14b2ee7/Action.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/77/fa163e8c/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBF2453-FFE3-48B8-BFF5-9F7F22A27D4B/aa/342d9d11/ProfilerWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/c2/79511256/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7B1C0E4-00A6-4326-84F6-1DF6FFB461D6/6b/c2f444a3/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/a4/60ea6694/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/Util/DelegateList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/Util/MonoBehaviourCallbackHooks.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBF2453-FFE3-48B8-BFF5-9F7F22A27D4B/aa/342d9d11/ProfilerWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/14/d14b2ee7/Action.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/77/fa163e8c/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/bc/4738778a/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/d1/eea616ae/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/30/c18ccb13/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/a4/60ea6694/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/c2/79511256/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/e0/9fe1dc6e/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C7B1C0E4-00A6-4326-84F6-1DF6FFB461D6/6b/c2f444a3/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF7E2EFC-13D1-4514-9706-E914B39EA034/93/d288dc2b/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ab74fe8c3de74feeafac966c034df8aa171c00/c8/ee23455b/UnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -112,43 +163,69 @@
       </list>
     </option>
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2m1RtnuNMKSmZtonA3FQcKb4vL2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35036203" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.stylelint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.stylelint" value="" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.CSharpInteractiveConfiguration" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "AdressablesHomework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity\Editors\2022.3.3f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Unity\Projects\otusUnity2 -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Unity\Projects\otusUnity2" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity\Editors\2022.3.3f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Unity\Projects\otusUnity2 -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Unity\Projects\otusUnity2" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14392">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14392" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -189,21 +266,33 @@
       <workItem from="1738224680136" duration="6839000" />
       <workItem from="1738266745211" duration="6526000" />
       <workItem from="1738682526766" duration="12800000" />
+      <workItem from="1740827929360" duration="15745000" />
+      <workItem from="1740843809067" duration="437000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="1">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -222,6 +311,7 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
@@ -232,131 +322,9 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="517" y="237" key="#Notifications" timestamp="1738227129067">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="517" y="237" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1738227129067" />
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1736758810535">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1736758810535" />
-    <state width="1270" height="466" key="DebuggerActiveHint" timestamp="1738693977094">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="762" height="274" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1738272752299" />
-    <state width="1270" height="466" key="DebuggerActiveHint/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738693977094" />
-    <state width="2517" height="413" key="GridCell.Tab.0.bottom" timestamp="1738703321713">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321713" />
-    <state width="2517" height="413" key="GridCell.Tab.0.center" timestamp="1738703321713">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321713" />
-    <state width="2517" height="413" key="GridCell.Tab.0.left" timestamp="1738703321713">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321713" />
-    <state width="2517" height="413" key="GridCell.Tab.0.right" timestamp="1738703321713">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321713" />
-    <state width="2517" height="413" key="GridCell.Tab.1.bottom" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.1.center" timestamp="1738703321713">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321713" />
-    <state width="2517" height="413" key="GridCell.Tab.1.left" timestamp="1738703321713">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321713" />
-    <state width="2517" height="413" key="GridCell.Tab.1.right" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.2.bottom" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.2.center" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.2.left" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.2.right" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1738273320095" />
-    <state width="2517" height="413" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.3.bottom" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1738273320096" />
-    <state width="2517" height="413" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.3.center" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1738273320096" />
-    <state width="2517" height="413" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.3.left" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1738273320096" />
-    <state width="2517" height="413" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state width="2517" height="413" key="GridCell.Tab.3.right" timestamp="1738703321714">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1493" height="230" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1738273320096" />
-    <state width="2517" height="413" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1738703321714" />
-    <state x="628" y="227" key="RiderGenerateDialog" timestamp="1736631169597">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="628" y="227" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1736631169597" />
-    <state x="1047" y="424" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1731007623982" />
-    <state x="278" y="117" width="915" height="707" key="SettingsEditor" timestamp="1735893289900">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="278" y="117" width="915" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1735893289900" />
-    <state x="92" y="94" width="2375" height="1214" key="VCS.FileHistoryDialog" timestamp="1730654008688">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="92" y="94" width="2375" height="1214" key="VCS.FileHistoryDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730654008688" />
-    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1735917072290">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1735917072290" />
-    <state x="566" y="185" width="672" height="400" key="search.everywhere.popup" timestamp="1738225953554">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="566" y="185" width="672" height="400" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1738225953554" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -364,7 +332,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSavers/UnitsDataSaver.cs</url>
           <line>6</line>
-          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Homeworks\SaveLoad\Scripts\SavingSystem\DataSavers\UnitsDataSaver.cs" initialLine="6" />
+          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Homeworks\SaveLoad\Scripts\SavingSystem\DataSavers\UnitsDataSaver.cs" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
