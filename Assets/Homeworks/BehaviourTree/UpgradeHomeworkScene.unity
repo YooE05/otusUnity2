@@ -1712,6 +1712,7 @@ GameObject:
   - component: {fileID: 823436788}
   - component: {fileID: 823436787}
   - component: {fileID: 823436786}
+  - component: {fileID: 823436789}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -1727,7 +1728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823436784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.13, y: 1.41, z: 0.26}
+  m_LocalPosition: {x: -3.02, y: 1.41, z: 8.17}
   m_LocalScale: {x: 0.35999998, y: 4.6349998, z: 0.35999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1805,6 +1806,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823436784}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &823436789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823436784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e875e6449e4632ab8623fc58b4499b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resourceView: {fileID: 823436784}
 --- !u!1 &878986339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878986339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.79, y: 0, z: 5.96}
+  m_LocalPosition: {x: -1.64, y: 0, z: -4.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1965,7 +1979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913853209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.49, y: 0, z: 0}
+  m_LocalPosition: {x: -4.16, y: 0, z: 0.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1996,7 +2010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962284900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.61, y: 0, z: 5.26}
+  m_LocalPosition: {x: -3.36, y: 0, z: 5.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2180,7 +2194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027821674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.2, y: 0, z: 8.84}
+  m_LocalPosition: {x: -0.05, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2234,8 +2248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0439921916f54490ad08674c5e812610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isTreeAvailable: 0
-  _treeTransform: {fileID: 823436785}
+  _treeResource: {fileID: 823436789}
+  _converter: {fileID: 1888804384}
+  _converterStayPoint: {fileID: 913853210}
 --- !u!4 &1166465848
 Transform:
   m_ObjectHideFlags: 0
@@ -3124,7 +3139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466811439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.75, y: 0, z: 10.08}
+  m_LocalPosition: {x: -5.87, y: 0, z: -1.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4049,7 +4064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888804382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.72, y: 0, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

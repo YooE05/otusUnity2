@@ -9,247 +9,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeAvailability.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeAvailability.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToTree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToTree.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckHasResources.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckHasResources.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeInRange.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeInRange.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Resource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Resource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/ResourcesContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/ResourcesContainer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToConverter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPutResources.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPutResources.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskResourceExtraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskResourceExtraction.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsPack/Toon_RTS/Knights/animation/infantry/Slow Infantry.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsPack/Toon_RTS/Knights/animation/infantry/Slow Infantry.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Bold.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Light.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Medium.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-SemiBold.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Prefabs/StatPrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Prefabs/StatPrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePopup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePopup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/CharismaStat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/CharismaStat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/DamageStat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/DamageStat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/HealthStat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/HealthStat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/CharacterInfoData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/CharacterInfoData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Knight.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Knight.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Mage.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Mage.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Orc.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Orc.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Button (Close).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Button (Close).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonActive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonInactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonInactive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Point.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Background).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Background).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Header).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Header).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Portrait.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Portrait.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Background).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Background).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Completed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Completed).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Not completed).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Not completed).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Sunrays.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Sunrays.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Stone.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Stone.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/EntitiesContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/EntitiesContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResources.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResources.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceType.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IGameRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IGameRepository.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/PlayerResourcesSaver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/PlayerResourcesSaver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/UpgradesDZInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/UpgradesDZInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Prefabs/UpgradeView.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Prefabs/UpgradeView.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/MoneyStorage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/MoneyStorage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradeView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradeView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/OutAreaUpgradeConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/OutAreaUpgradeConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/PutAreaUpgradeConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/PutAreaUpgradeConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/StationSpeedUpgradeConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/StationSpeedUpgradeConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaCapacityUpgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaCapacityUpgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaConfigUpgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaConfigUpgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaCapacityUpgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaCapacityUpgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaConfigUpgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaConfigUpgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedConfigUpgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedConfigUpgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedUpgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedUpgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/CapacityTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/CapacityTable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/StationTimeTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/StationTimeTable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/UpgradePriceTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/UpgradePriceTable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Upgrade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Upgrade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Upgrade Station.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Upgrade Station.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/UpgradeHomeworkScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/UpgradeHomeworkScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/boot.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPatrol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/UpgradeHomeworkScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/UpgradeHomeworkScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,15 +52,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Lesson_9/Assets/Code/Currency/Money/MoneyStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Otus_UnityProfessional/Assets/Game/Tutorial/Content/4.UpgradeHero/Scripts/2.UpgradePopup/UpgradePopupController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.2.1/Runtime/Stores/ProductCatalog.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.services.analytics@4.0.1/Runtime/AnalyticsServiceInstance.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
@@ -296,6 +69,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/e0/9fe1dc6e/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF7E2EFC-13D1-4514-9706-E914B39EA034/93/d288dc2b/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ab74fe8c3de74feeafac966c034df8aa171c00/0c/b986a6e8/Resources.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -456,7 +230,7 @@
       <workItem from="1736144606768" duration="21827000" />
       <workItem from="1736194605260" duration="6089000" />
       <workItem from="1736241631913" duration="1580000" />
-      <workItem from="1741195412971" duration="6682000" />
+      <workItem from="1741195412971" duration="12146000" />
     </task>
     <servers />
   </component>
