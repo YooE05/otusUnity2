@@ -1,26 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeAvailability.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeAvailability.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToTree.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToTree.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradeView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/CapacityTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/CapacityTable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedConfigUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedConfigUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationTimeTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationTimeTable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradePriceTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradePriceTable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetsPack/Toon_RTS/Knights/animation/infantry/Slow Infantry.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsPack/Toon_RTS/Knights/animation/infantry/Slow Infantry.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Light.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Medium.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Fonts/OpenSans-SemiBold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Prefabs/StatPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Prefabs/StatPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/IPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/InputHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePopup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePopup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/ProfilePopup/ProfilePresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStat.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/CharismaStat.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/CharismaStat.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/DamageStat.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/DamageStat.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/HealthStat.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/Data/HealthStat.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/CharacterInfoData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/CharacterInfoData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Knight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Knight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Mage.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Mage.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Orc.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/Data/Orc.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Ava3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Button (Close).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Button (Close).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonActive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonActive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonInactive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ButtonInactive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Point.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Background).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Background).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Header).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Popup (Header).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Portrait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Portrait.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Background).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Background).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Completed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Completed).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Not completed).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/ProgressBar (Not completed).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Sunrays.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Sprites/Sunrays.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Template 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Stone.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Stone.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Tree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Prefabs/Tree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/EntitiesContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/EntitiesContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResources.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResources.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/PlayerResourcesHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Resources/ResourceType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaveConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSaver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/GameRepository.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IGameRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IGameRepository.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResoucesSaver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/MapResourcesHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/PlayerResourcesSaver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/ResourcesData/PlayerResourcesSaver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/SaveLoadManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/UnitsData/UnitsDataSaver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Units/UnitsHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/UpgradesDZInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/UpgradesDZInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Prefabs/UpgradeView.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Prefabs/UpgradeView.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/MoneyStorage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/MoneyStorage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/ObjectSpawnArea.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelPresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePresenter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradeView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradeView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/OutAreaUpgradeConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/OutAreaUpgradeConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/PutAreaUpgradeConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/PutAreaUpgradeConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/StationSpeedUpgradeConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Configs/StationSpeedUpgradeConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaCapacityUpgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaCapacityUpgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaConfigUpgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/OutAreaConfigUpgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaCapacityUpgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaCapacityUpgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaConfigUpgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/PutAreaConfigUpgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedConfigUpgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedConfigUpgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedUpgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/StationSpeedUpgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/CapacityTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/CapacityTable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/StationTimeTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/StationTimeTable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/UpgradePriceTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Tables/UpgradePriceTable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Upgrade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/Upgrade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UpgradeSystem/UpgradeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Upgrade Station.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Upgrade Station.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/UpgradeHomeworkScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/UpgradeHomeworkScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/boot.config" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,36 +259,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YooE05"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/YooE05/otusUnity2.git",
+    "accountId": "af795b52-486e-4bc2-b5a2-820e9351c1c3"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Stats/CharacterStatView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF7E2EFC-13D1-4514-9706-E914B39EA034/93/d288dc2b/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/UpgradesDZInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Lesson_9/Assets/Code/Currency/Money/MoneyStorage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/e0/9fe1dc6e/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/30/c18ccb13/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/Core/PresenterSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/UserInfo/UserInfoView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.services.analytics@4.0.1/Runtime/AnalyticsServiceInstance.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/c2/79511256/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/PresentationModel/Scripts/PlayerLevel/PlayerLevelView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Otus_UnityProfessional/Assets/Game/Tutorial/Content/4.UpgradeHero/Scripts/2.UpgradePopup/UpgradePopupController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/Core/SaveLoadSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Core/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/StationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Core/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartUIView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.2.1/Runtime/Stores/ProductCatalog.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/a4/60ea6694/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/IDataSaver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.services.analytics@4.0.1/Runtime/AnalyticsServiceInstance.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Homeworks/UpgradeManager/Scripts/UI/UpgradePanelView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/9d/125c34a4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/28/e4379068/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/30/c18ccb13/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/59/d2104f97/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/a4/60ea6694/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/c2/79511256/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AFD1274-F120-4050-96BC-1AD9E2010BA6/e0/9fe1dc6e/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E90BEB44-6898-4ECF-B706-59AC067ECC5C/72/cd596f64/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FF7E2EFC-13D1-4514-9706-E914B39EA034/93/d288dc2b/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -118,34 +354,58 @@
       </list>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2m1RtnuNMKSmZtonA3FQcKb4vL2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.stylelint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.stylelint" value="" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.CSharpInteractiveConfiguration" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "behaviour__tree",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity\Editors\2022.3.3f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Unity\Projects\otusUnity2 -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Unity\Projects\otusUnity2" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity\Editors\2022.3.3f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Unity\Projects\otusUnity2 -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Unity\Projects\otusUnity2" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -153,8 +413,12 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -192,6 +456,7 @@
       <workItem from="1736144606768" duration="21827000" />
       <workItem from="1736194605260" duration="6089000" />
       <workItem from="1736241631913" duration="1580000" />
+      <workItem from="1741195412971" duration="6682000" />
     </task>
     <servers />
   </component>
@@ -199,14 +464,23 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="1">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -225,6 +499,7 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
@@ -235,138 +510,9 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="762" height="274" key="DebuggerActiveHint" timestamp="1735917102818">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="762" height="274" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1735917102818" />
-    <state width="437" height="464" key="DebuggerActiveHint/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729966740933" />
-    <state width="1493" height="78" key="GridCell.Tab.0.bottom" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.0.center" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618682" />
-    <state width="1493" height="78" key="GridCell.Tab.0.left" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618681" />
-    <state width="1493" height="78" key="GridCell.Tab.0.right" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618682" />
-    <state width="1493" height="78" key="GridCell.Tab.1.bottom" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.1.center" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.1.left" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.1.right" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.2.bottom" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.2.center" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.2.left" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.2.right" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.3.bottom" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.3.center" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.3.left" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state width="1493" height="78" key="GridCell.Tab.3.right" timestamp="1736200740271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="78" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1736200740271" />
-    <state width="2517" height="247" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730667618683" />
-    <state x="628" y="227" key="RiderGenerateDialog" timestamp="1736197076176">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="628" y="227" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1736197076176" />
-    <state x="1047" y="424" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1731007623982" />
-    <state x="1000" y="410" key="RollbackChangesDialog" timestamp="1727811727353">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1000" y="410" key="RollbackChangesDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1727811727353" />
-    <state x="278" y="117" width="915" height="707" key="SettingsEditor" timestamp="1736169804209">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="278" y="117" width="915" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1736169804209" />
-    <state x="464" y="437" width="1524" height="911" key="SettingsEditor/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729964175586" />
-    <state x="92" y="94" width="2375" height="1214" key="VCS.FileHistoryDialog" timestamp="1730654008688">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="92" y="94" width="2375" height="1214" key="VCS.FileHistoryDialog/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1730654008688" />
-    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1735917072290">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1735917072290" />
-    <state x="1000" y="139" width="1920" height="1388" key="dock-window-1" timestamp="1728490421662">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1000" y="139" width="1920" height="1388" key="dock-window-1/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1728490421662" />
-    <state x="562" y="194" key="run.anything.popup" timestamp="1736072758635">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="562" y="194" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1736072758635" />
-    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729960960752" />
-    <state x="566" y="185" width="672" height="400" key="search.everywhere.popup" timestamp="1736198321043">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="566" y="185" width="672" height="400" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1736198321043" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1536.824@0.0.2560.1400" timestamp="1729928638206" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -374,10 +520,14 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Homeworks/SaveLoad/Scripts/SavingSystem/DataSavers/UnitsDataSaver.cs</url>
           <line>6</line>
-          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Homeworks\SaveLoad\Scripts\SavingSystem\DataSavers\UnitsDataSaver.cs" initialLine="6" />
+          <properties documentPath="C:\Unity\Projects\otusUnity2\Assets\Homeworks\SaveLoad\Scripts\SavingSystem\DataSavers\UnitsDataSaver.cs" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
