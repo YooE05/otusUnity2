@@ -13,18 +13,15 @@ namespace Homeworks.BehaviourTree
     public class Node
     {
         protected NodeState _state;
+        protected Node _parent;
+        protected readonly List<Node> _children = new();
 
-        public Node Parent;
-        protected List<Node> _children = new();
-
-        private Dictionary<string, object> _dataContext = new();
-
-        public Node()
+        protected Node()
         {
-            Parent = null;
+            _parent = null;
         }
 
-        public Node(List<Node> children)
+        protected Node(List<Node> children)
         {
             for (var i = 0; i < children.Count; i++)
             {
@@ -34,59 +31,10 @@ namespace Homeworks.BehaviourTree
 
         private void Attach(Node node)
         {
-            node.Parent = this;
+            node._parent = this;
             _children.Add(node);
         }
 
         public virtual NodeState Evaluate() => NodeState.FAILURE;
-
-        public void SetData(string key, object value)
-        {
-            _dataContext[key] = value;
-        }
-
-        public object GetData(string key)
-        {
-            object value = null;
-            if (_dataContext.TryGetValue(key, out value))
-                return value;
-
-            var node = Parent;
-            while (node != null)
-            {
-                value = node.GetData(key);
-                if (value != null)
-                {
-                    return value;
-                }
-
-                node = node.Parent;
-            }
-
-            return null;
-        }
-
-        public bool ClearData(string key)
-        {
-            if (_dataContext.ContainsKey(key))
-            {
-                _dataContext.Remove(key);
-                return true;
-            }
-
-            var node = Parent;
-            while (node != null)
-            {
-                var cleared = node.ClearData(key);
-                if (cleared)
-                {
-                    return true;
-                }
-
-                node = node.Parent;
-            }
-
-            return false;
-        }
     }
 }

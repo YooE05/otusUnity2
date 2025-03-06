@@ -8,18 +8,19 @@ namespace Homeworks.BehaviourTree
         private readonly Transform _transform;
         private readonly Animator _animator;
         private readonly Transform[] _waypoints;
-
-        private int _currentWaypointIndex = 0;
+        private readonly float _speed;
 
         private const float WaitTime = 1f;
+        private int _currentWaypointIndex = 0;
         private float _waitCounter = 0f;
         private bool _waiting = false;
 
-        public TaskPatrol(Transform transform, Transform[] waypoints, Animator animator)
+        public TaskPatrol(Transform transform, Transform[] waypoints, Animator animator, float speed)
         {
             _transform = transform;
             _animator = animator;
             _waypoints = waypoints;
+            _speed = speed;
         }
 
         public override NodeState Evaluate()
@@ -48,7 +49,7 @@ namespace Homeworks.BehaviourTree
                 else
                 {
                     _transform.position =
-                        Vector3.MoveTowards(_transform.position, wp.position, NpcBT.Speed * Time.deltaTime);
+                        Vector3.MoveTowards(_transform.position, wp.position, _speed * Time.deltaTime);
                     _transform.LookAt(wp.position);
                     _animator.SetBool("Walking", true);
                 }

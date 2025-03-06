@@ -9,24 +9,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a44f263-8e7e-427c-be2e-96c237888f8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckHasResources.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckHasResources.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeInRange.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeInRange.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Resource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Resource.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/ResourcesContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/ResourcesContainer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToConverter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPutResources.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPutResources.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskResourceExtraction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskResourceExtraction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/ResourcesSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/ResourcesSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.otusUnity2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Blackboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckHasResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckHasResources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeAvailability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeAvailability.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeInRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/CheckTreeInRange.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Core/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Core/Node.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/NpcBT.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Resource.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/Resource.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskGoToTree.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPatrol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPutResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskPutResources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskResourceExtraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/Scripts/NPC/TaskResourceExtraction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/UpgradeHomeworkScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Homeworks/BehaviourTree/UpgradeHomeworkScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,21 +32,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "YooE05"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;YooE05&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/YooE05/otusUnity2.git",
-    "accountId": "af795b52-486e-4bc2-b5a2-820e9351c1c3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YooE05/otusUnity2.git&quot;,
+    &quot;accountId&quot;: &quot;af795b52-486e-4bc2-b5a2-820e9351c1c3&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Lesson_9/Assets/Code/Currency/Money/MoneyStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Otus_UnityProfessional/Assets/Game/Tutorial/Content/4.UpgradeHero/Scripts/2.UpgradePopup/UpgradePopupController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -128,10 +129,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2m1RtnuNMKSmZtonA3FQcKb4vL2" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -142,6 +143,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "behaviour__tree",
     "node.js.detected.package.eslint": "true",
@@ -183,13 +185,15 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17016">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17016" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -231,6 +235,7 @@
       <workItem from="1736194605260" duration="6089000" />
       <workItem from="1736241631913" duration="1580000" />
       <workItem from="1741195412971" duration="12146000" />
+      <workItem from="1741241320385" duration="8692000" />
     </task>
     <servers />
   </component>

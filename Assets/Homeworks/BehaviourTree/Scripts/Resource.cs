@@ -6,12 +6,9 @@ namespace Homeworks.BehaviourTree
     public class Resource : MonoBehaviour
     {
         [SerializeField] private GameObject _resourceView;
-        public bool IsReadyToGet { get; private set; } = false;
 
-        private void Awake()
-        {
-            Get();
-        }
+        public Transform Transform => _resourceView.transform;
+        public bool IsReadyToGet { get; private set; } = false;
 
         [Button]
         public void Enable()

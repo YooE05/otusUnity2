@@ -5,7 +5,10 @@ namespace Homeworks.BehaviourTree
 {
     public class Blackboard : MonoBehaviour
     {
-        [SerializeField] private Resource _treeResource;
+        //deprecated
+
+
+        /*[SerializeField] private Resource _treeResource;
         public static Resource TreeResource { get; private set; }
         public static bool IsTreeAvailable { get; private set; }
         public static Transform TreeTransform { get; private set; }
@@ -14,7 +17,7 @@ namespace Homeworks.BehaviourTree
         public static StationHandler Converter;
         public static Transform ConverterStayPoint { get; private set; }
         [SerializeField] private Transform _converterStayPoint;
-        
+
         private void Awake()
         {
             TreeTransform = _treeResource.transform;
@@ -26,6 +29,6 @@ namespace Homeworks.BehaviourTree
         {
             IsTreeAvailable = _treeResource.IsReadyToGet;
             TreeResource = _treeResource;
-        }
+        }*/
     }
 }

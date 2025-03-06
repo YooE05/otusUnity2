@@ -5,15 +5,19 @@ namespace Homeworks.BehaviourTree
 {
     public class TaskPutResources : Node
     {
-        private readonly Animator _animator;
         private Transform _lastTarget;
-        private StationHandler _converter;
         private const float PutTime = 1f;
         private float _putCounter = 0f;
 
-        public TaskPutResources(Animator animator)
+        private readonly Animator _animator;
+        private readonly StationHandler _converter;
+        private readonly ResourcesContainer _resourcesContainer;
+
+        public TaskPutResources(Animator animator, StationHandler converter, ResourcesContainer resourcesContainer)
         {
             _animator = animator;
+            _converter = converter;
+            _resourcesContainer = resourcesContainer;
         }
 
         public override NodeState Evaluate()
@@ -21,14 +25,12 @@ namespace Homeworks.BehaviourTree
             _animator.SetBool("Walking", false);
             _animator.SetBool("Attacking", true);
 
-            _converter = Blackboard.Converter;
-
             _putCounter += Time.deltaTime;
             if (_putCounter >= PutTime)
             {
-                _converter.PutResourcesToStation(NpcBT.ResourcesContainer.ResourceAmount,
-                    NpcBT.ResourcesContainer.ResourceAmount, out var left);
-                NpcBT.ResourcesContainer.Remove(NpcBT.ResourcesContainer.ResourceAmount - left);
+                _converter.PutResourcesToStation(_resourcesContainer.ResourceAmount,
+                    _resourcesContainer.ResourceAmount, out var left);
+                _resourcesContainer.Remove(_resourcesContainer.ResourceAmount - left);
 
                 _animator.SetBool("Attacking", false);
                 _animator.SetBool("Walking", true);
